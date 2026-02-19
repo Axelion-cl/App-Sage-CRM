@@ -1,0 +1,1595 @@
+[
+  {
+    "id": 1731,
+    "emailTo": null,
+    "attachments": [],
+    "extId": null,
+    "accountId": null,
+    "contactId": null,
+    "opportunityId": null,
+    "salesRepId": -1,
+    "emailFrom": null,
+    "body": null,
+    "date": {
+      "time": "2026-02-19T20:16:42Z",
+      "timeStamp": 1771532202,
+      "timeZone": "UTC"
+    },
+    "originEmailId": null,
+    "type": null,
+    "mailFolder": null,
+    "subject": null,
+    "salesRepIdDeleted": 1,
+    "salesRepIdUpdated": null,
+    "dateCreated": null,
+    "dateUpdated": null,
+    "dateDeleted": null,
+    "deleted": true
+  },
+  {
+    "id": 1732,
+    "emailTo": null,
+    "attachments": [],
+    "extId": null,
+    "accountId": null,
+    "contactId": null,
+    "opportunityId": null,
+    "salesRepId": -1,
+    "emailFrom": null,
+    "body": null,
+    "date": {
+      "time": "2026-02-19T20:16:42Z",
+      "timeStamp": 1771532202,
+      "timeZone": "UTC"
+    },
+    "originEmailId": null,
+    "type": null,
+    "mailFolder": null,
+    "subject": null,
+    "salesRepIdDeleted": 1,
+    "salesRepIdUpdated": null,
+    "dateCreated": "2016-05-09T06:25:42.727Z",
+    "dateUpdated": null,
+    "dateDeleted": null,
+    "deleted": true
+  },
+  {
+    "id": 1733,
+    "emailTo": "force@bienek.cl",
+    "attachments": [],
+    "extId": "X89043b65d521082016c183cbc99aef7f10e1b7d3",
+    "accountId": 3031,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.trapani@trapani.cl",
+    "body": "DESDE claudia.trapani@trapani.clA force@bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-03-31T19:34:11Z",
+      "timeStamp": 1743449651,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<0d1301dba28d$066a2670$133e7350$@trapani.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "PRUEBA A CORREO FORCE",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-01T00:34:20.66Z",
+    "dateUpdated": "2025-04-01T00:34:20.66Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1734,
+    "emailTo": "claudia.trapani@trapani.cl",
+    "attachments": [],
+    "extId": "X042fdd2602102fa0528ca9074fec7e0122a965e8",
+    "accountId": 3031,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "force@bienek.cl",
+    "body": "Hola",
+    "date": {
+      "time": "2025-03-31T19:35:11Z",
+      "timeStamp": 1743449711,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<8lsc2plqxegoi8hba7j4kz1ru.D8UT65VA2JQ7@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "PRUEBA",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-01T00:35:16.223Z",
+    "dateUpdated": "2025-04-01T00:35:29.407Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1735,
+    "emailTo": "claudia.caamanokrause@gmail.com",
+    "attachments": [],
+    "extId": "Xa8de448d3c71503a1fe9c2542bbab0ff536670b6",
+    "accountId": 3031,
+    "contactId": 289,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "force@bienek.cl",
+    "body": "HOLA",
+    "date": {
+      "time": "2025-03-31T19:40:40Z",
+      "timeStamp": 1743450040,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<62e71dqnle8g7u84oo9yhip7t.D8UTACV7BU0J@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "PRUEBA ",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-01T00:40:45.14Z",
+    "dateUpdated": "2025-04-01T00:40:56.783Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1736,
+    "emailTo": "claudia.trapani@trapani.cl",
+    "attachments": [],
+    "extId": "X106ea84d6ba6bae76a45d19bf4a382e8d113b7b7",
+    "accountId": 3031,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "force@bienek.cl",
+    "body": "HOLA",
+    "date": {
+      "time": "2025-03-31T19:40:40Z",
+      "timeStamp": 1743450040,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<62e71dqnle8g7u84oo9yhip7t.D8UTACV7BU0J@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "PRUEBA ",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-01T00:40:45.373Z",
+    "dateUpdated": "2025-04-01T00:40:56.783Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1737,
+    "emailTo": "force@bienek.cl",
+    "attachments": [],
+    "extId": "X03bcf01b999ab662e815c1901f2e4c59b4688930",
+    "accountId": 3031,
+    "contactId": 289,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamanokrause@gmail.com",
+    "body": "Prueba desde correo externo",
+    "date": {
+      "time": "2025-03-31T19:45:06Z",
+      "timeStamp": 1743450306,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CA+KM144-caP_-ZQ-HbOPD5BO2sdSVDWAzBQKvaj1JbUG5Cnzxg@mail.gmail.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Prueba desde Gmail a Force",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-01T00:50:17.093Z",
+    "dateUpdated": "2025-04-01T00:50:17.093Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1738,
+    "emailTo": "claudia.caamanokrause@gmail.com",
+    "attachments": [],
+    "extId": "Xb94417d3c9e704e4fbf93a26325c544ffc846934",
+    "accountId": 3031,
+    "contactId": 289,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "force@bienek.cl",
+    "body": "prueba 17-04-2025salida",
+    "date": {
+      "time": "2025-04-17T20:49:37Z",
+      "timeStamp": 1744922977,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<8qj1su2ujonur39f1ffh0hasx.D99COCVLGXL4@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 95,
+    "dateCreated": "2025-04-18T02:49:42.277Z",
+    "dateUpdated": "2025-04-18T02:49:56.653Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1739,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "Xbb0e944bf95993ff36d7f476ae39293a7771a126",
+    "accountId": 3032,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "Alejandra.ponce@bienek.cl",
+    "body": "ok",
+    "date": {
+      "time": "2025-04-17T21:32:43Z",
+      "timeStamp": 1744925563,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<a689wkf5bfmyasi3rnuqk5qt1.D99DLCSG7UC8@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "prueba de correo",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 102,
+    "dateCreated": "2025-04-18T03:32:46.977Z",
+    "dateUpdated": "2025-04-18T03:34:44.157Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1740,
+    "emailTo": "alejandra.ponce@bienek.cl",
+    "attachments": [],
+    "extId": "Xe5b5baa25ef6951dbb027e3112199be2c6a9e7c6",
+    "accountId": 3032,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Desde Outlook claudia a alejandra \n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-17T21:58:30Z",
+      "timeStamp": 1744927110,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<33e401dbb005$6250f740$26f2e5c0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "PRUEBA",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 102,
+    "dateCreated": "2025-04-18T04:00:35.863Z",
+    "dateUpdated": "2025-04-18T04:00:35.863Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1741,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "X4ae1143e9be6d514e6574b5b6042aeffa0e3a240",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "Jose.mendoza@bienek.cl",
+    "body": "ok prueba 22:59",
+    "date": {
+      "time": "2025-04-17T22:59:20Z",
+      "timeStamp": 1744930760,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<9yidihjttnt6q2496rweum7bc.D99FFO3XMNBL@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "prueba de correo",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 99,
+    "dateCreated": "2025-04-18T04:59:24.68Z",
+    "dateUpdated": "2025-04-18T05:00:49.767Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1742,
+    "emailTo": "carlos.villanueva@bienek.cl",
+    "attachments": [
+      {
+        "id": 1888,
+        "name": "POSTULACION INTEGRA MAULE  CODIGOS COSTOS 707420-3-LR25 PRECIOS FINALES ABR 2025.xlsx"
+      },
+      {
+        "id": 1889,
+        "name": "image001.jpg"
+      },
+      {
+        "id": 1890,
+        "name": "image002.png"
+      }
+    ],
+    "extId": "X48f107d994eb28c018ba4e72d2fbab5c1b17fbb7",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "CarlosBuen díaLa postulación en referencia es de prioridad ganarla.Por lo anterior en la toalla y el higiénico iremos AL 4%, esto porque no somos locales y porque existe la posibilidad de que postule una marca más económica incluso. Los precios de venta son lo que adjunto en archivo y tu comisión sería de 0,5% en estos dos ítem.\nLa marca en papel será elite (con mejores condiciones).\nEsperamos con estos esfuerzos adjudicarla.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl [mailto:carlos.villanueva@bienek.cl] Enviado el: jueves, 17 de abril de 2025 8:30Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Licitación Fundación Integra\nEstimada Claudia, muy buenos días, respecto a la postulación para la licitación de Fundación Integra, nuestro total final neto (290+IVA) está aproximadamente a $8.000 del límite del presupuesto (353 millones), lo cual no es un buen indicador, teniendo en mente que la variable principal de ésta postulación es el precio (50%)\n\nPor lo tanto sugiero bajar del 10% de margen a los siguientes 7 productos:En toalla de papel y papel higiénico, sugiero un 7% de margen, para los 5 restantes (algodón, cloro, detergente y guante de nitrilo) un 8% de margen\n\nRevíselo, por favorQuedo a la espera de sus indicacionesCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-20T23:39:53Z",
+      "timeStamp": 1745192393,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<34d501dbb26f$0cbe1760$263a4620$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: Licitación Fundación Integra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T05:40:11.633Z",
+    "dateUpdated": "2025-04-21T05:40:11.633Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1743,
+    "emailTo": "Cristian.ochoa@bienek.cl",
+    "attachments": [
+      {
+        "id": 1891,
+        "name": "image001.png"
+      },
+      {
+        "id": 1892,
+        "name": "Orden compra Collipulli  N°1139 Bienek.pdf"
+      }
+    ],
+    "extId": "X7da794a098c32fea587ea8ee49aa2511e18fa326",
+    "accountId": 1841,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "neldamatus@vidadial.cl",
+    "body": "Estimado Cristian \n: \n\n Junto con saludar y esperando tenga un buen inicio de semana \n, adjunto orden de compra sede Collipulli \nN°1139, según stock y ruta disponible .\n\nAgradeciendo siempre sus gestiones .-",
+    "date": {
+      "time": "2025-04-21T08:11:34Z",
+      "timeStamp": 1745223094,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<SC3P152MB7975FB07BA7A5E18EF326B1BDDB82@SC3P152MB7975.LAMP152.PROD.OUTLOOK.COM>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Orden de compra Bienek N°1139 Sede Collipulli",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 98,
+    "dateCreated": "2025-04-21T14:12:19.063Z",
+    "dateUpdated": "2025-04-21T14:12:19.063Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1744,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [
+      {
+        "id": 1893,
+        "name": "image003.jpg"
+      },
+      {
+        "id": 1894,
+        "name": "image001.jpg"
+      },
+      {
+        "id": 1895,
+        "name": "image002.png"
+      }
+    ],
+    "extId": "X513e4c650000d8b3913cbf48947830af02c901b8",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "carlos.villanueva@bienek.cl",
+    "body": "Bien, modificaré los precios\nCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: domingo, 20 de abril de 2025 23:40Para: carlos.villanueva@bienek.clAsunto: RE: Licitación Fundación Integra\n\nCarlosBuen díaLa postulación en referencia es de prioridad ganarla.Por lo anterior en la toalla y el higiénico iremos AL 4%, esto porque no somos locales y porque existe la posibilidad de que postule una marca más económica incluso. Los precios de venta son lo que adjunto en archivo y tu comisión sería de 0,5% en estos dos ítem.\nLa marca en papel será elite (con mejores condiciones).\nEsperamos con estos esfuerzos adjudicarla.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl [mailto:carlos.villanueva@bienek.cl] Enviado el: jueves, 17 de abril de 2025 8:30Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Licitación Fundación Integra\nEstimada Claudia, muy buenos días, respecto a la postulación para la licitación de Fundación Integra, nuestro total final neto (290+IVA) está aproximadamente a $8.000 del límite del presupuesto (353 millones), lo cual no es un buen indicador, teniendo en mente que la variable principal de ésta postulación es el precio (50%)\n\nPor lo tanto sugiero bajar del 10% de margen a los siguientes 7 productos:En toalla de papel y papel higiénico, sugiero un 7% de margen, para los 5 restantes (algodón, cloro, detergente y guante de nitrilo) un 8% de margen\n\nRevíselo, por favorQuedo a la espera de sus indicacionesCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T09:13:00Z",
+      "timeStamp": 1745226780,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001b01dbb2bf$3f6df4f0$be49ded0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Licitación Fundación Integra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T15:14:27.243Z",
+    "dateUpdated": "2025-04-21T15:14:27.243Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1745,
+    "emailTo": "jgarcia@muniarauco.cl",
+    "attachments": [
+      {
+        "id": 1896,
+        "name": "LISTADO CONVENIO MARCO VIII REGION BIENEK ABRIL.xlsx"
+      }
+    ],
+    "extId": "Xa9a0b8856fa22c5f4077e6ef3dc3de3ee6bf9f8f",
+    "accountId": 705,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenos días :\n\n Deseando un excelente día adjunto listado actualizado de nuestro convenio Marco … ante cualquier duda en la cual los pueda ayudar quedo a su disposición \nAtte.\n\n \n\nAlejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T09:19:00Z",
+      "timeStamp": 1745227140,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<002301dbb2bf$fd745980$f85d0c80$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "Listado Actualizado Convenio Marco",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-21T15:19:47.337Z",
+    "dateUpdated": "2025-04-21T15:19:47.337Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1746,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [
+      {
+        "id": 1897,
+        "name": "image001.png"
+      }
+    ],
+    "extId": "Xfab9cd87e3632cfa7ff3bec285c97c4febaa9563",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "jose.mendoza@bienek.cl",
+    "body": "psi\n\nAtte.\nJosé Mendoza A.BIENEK SPA.+56 9 94356331\nDe: SAP Ariba Network Cash Collections - LATAM - No Reply &lt;NOREPLY-ARIBA-LATAM@sap.com&gt; Enviado el: viernes, 18 de abril de 2025 8:29Para: JOSE.MENDOZA@BIENEK.CLAsunto: SAP Business Network - Nueva Factura - (51)\nNombre de la Compañía: Soluciones Integrales de LimpiezaANID: AN01048683355Número de Cliente: 1476169\nEstimado Cliente,Esperamos que se encuentre bien.El propósito de este correo electrónico es informarle que se ha generado una nueva factura 033-0001181596.\nImporte a abonar: $ 33,211.71 CLP.\nTenga en cuenta que las condiciones de pago son 30 días a partir de la fecha de emisión de la factura. \nPor favor, enviar comprobante de pago a ariba-latam@sap.com para su correcta aplicación.En caso de que tenga alguna consulta, no dude en ponerse en contacto con nosotros.\nSaludos cordiales.\nSAP Business Network Operations, Global Finance Shared Services ariba-latam@sap.com\n\nPara obtener más información, consulte el enlace: SAP Business Network Help Portal Para obtener asistencia inmediata del servicio de atención al cliente, haga clic Aquí\nExplore más soluciones de IA: SAP Business Network Supplier Membership Program - Learning VideosThis e-mail may contain trade secrets or privileged, undisclosed, or otherwise confidential information. If you have received this e-mail in error, you are hereby notified that any review, copying, or distribution of it is strictly prohibited. Please inform us immediately and destroy the original transmittal. Thank you for your cooperation.\n\nCopyright \n| Privacy | Legal Disclosure",
+    "date": {
+      "time": "2025-04-21T09:27:00Z",
+      "timeStamp": 1745227620,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<005001dbb2c1$27684a20$7638de60$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RV: SAP Business Network - Nueva Factura - (51)",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 99,
+    "dateCreated": "2025-04-21T15:28:19.517Z",
+    "dateUpdated": "2025-04-21T15:28:19.517Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1747,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [
+      {
+        "id": 1898,
+        "name": "image001.png"
+      }
+    ],
+    "extId": "Xeeb400432ebece0a9abb6e2b18f956ade629c6dc",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "jose.mendoza@bienek.cl",
+    "body": "Ok gracias\n\nAtte.\nJosé Mendoza A.BIENEK SPA.+56 9 94356331\nDe: johanna.reyes@bienek.cl &lt;johanna.reyes@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 9:40Para: jose.mendoza@bienek.clCC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RE: SAP Business Network - Nueva Factura - (51)\nDon Jose buen día.No se preocupe estas facturas vencen el 15/05 así que en su momento se pagarán .\nAtte.Johanna Reyes S.Contadora\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635517www.bienek.cl\nDe: jose.mendoza@bienek.cl &lt;jose.mendoza@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 9:28Para: johanna.reyes@bienek.clCC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RV: SAP Business Network - Nueva Factura - (51)\npsi\n\nAtte.\nJosé Mendoza A.BIENEK SPA.+56 9 94356331\nDe: SAP Ariba Network Cash Collections - LATAM - No Reply &lt;NOREPLY-ARIBA-LATAM@sap.com&gt; Enviado el: viernes, 18 de abril de 2025 8:29Para: JOSE.MENDOZA@BIENEK.CLAsunto: SAP Business Network - Nueva Factura - (51)\nNombre de la Compañía: Soluciones Integrales de LimpiezaANID: AN01048683355Número de Cliente: 1476169\nEstimado Cliente,Esperamos que se encuentre bien.El propósito de este correo electrónico es informarle que se ha generado una nueva factura 033-0001181596.\nImporte a abonar: $ 33,211.71 CLP.\nTenga en cuenta que las condiciones de pago son 30 días a partir de la fecha de emisión de la factura. \nPor favor, enviar comprobante de pago a ariba-latam@sap.com para su correcta aplicación.En caso de que tenga alguna consulta, no dude en ponerse en contacto con nosotros.\nSaludos cordiales.\nSAP Business Network Operations, Global Finance Shared Services ariba-latam@sap.com\n\nPara obtener más información, consulte el enlace: SAP Business Network Help Portal Para obtener asistencia inmediata del servicio de atención al cliente, haga clic Aquí\nExplore más soluciones de IA: SAP Business Network Supplier Membership Program - Learning VideosThis e-mail may contain trade secrets or privileged, undisclosed, or otherwise confidential information. If you have received this e-mail in error, you are hereby notified that any review, copying, or distribution of it is strictly prohibited. Please inform us immediately and destroy the original transmittal. Thank you for your cooperation.\n\nCopyright \n| Privacy | Legal Disclosure",
+    "date": {
+      "time": "2025-04-21T09:58:00Z",
+      "timeStamp": 1745229480,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<006d01dbb2c5$73c6c730$5b545590$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: SAP Business Network - Nueva Factura - (51)",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 99,
+    "dateCreated": "2025-04-21T16:05:58.727Z",
+    "dateUpdated": "2025-04-21T16:05:58.727Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1748,
+    "emailTo": "carlos.villanueva@bienek.cl",
+    "attachments": [],
+    "extId": "X509097ef740ad58706bc0313b3da8e489223229a",
+    "accountId": 2035,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "pvalenzuelap@apstalca.cl",
+    "body": "Buenos días, junto con saludar, agradezco la coordinación y en virtud a lo señalado con antelación, especialmente considerando el gran volumen de productos a despachar y recibir, asociados a OC 2292-394-CM25, solicitamos dar cumplimiento cabalmente a los previos acuerdos y generar el ingreso de los productos el día martes 29/04/2025.Que tenga una excelente semana.Saludos cordiales,El jue, 10 abr 2025 a las 18:14, &lt;carlos.villanueva@bienek.cl&gt; escribió:Estimada sra Paola, muy buenas tardes, gusto de saludarla, hoy en la tarde nos llegó la orden de compra 2292-394-CM25\n\nConsulta ¿para qué fecha necesita el despacho?\n\nQuedo a la espera de su retroalimentaciónCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T10:18:46Z",
+      "timeStamp": 1745230726,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CAAq9NqxJEg-y9rJYPpeWZpamnjtYQoZY=iYdQ-6MsHY536+RuQ@mail.gmail.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Re: Convenio SAR y SAPU 2292-394-CM25",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T16:19:08.99Z",
+    "dateUpdated": "2025-04-21T16:19:08.99Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1749,
+    "emailTo": "gerardo.alarcon@bienek.cl",
+    "attachments": [
+      {
+        "id": 1899,
+        "name": "OC N°802 HGGB.pdf"
+      },
+      {
+        "id": 1900,
+        "name": "OC N°801 HTC.pdf"
+      },
+      {
+        "id": 1901,
+        "name": "OC N°800 UBB CONCEPCION.pdf"
+      }
+    ],
+    "extId": "X68d8db1cf3bb9be2dd9868f2cbfcccc41f75daa0",
+    "accountId": 1565,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "sgarrido@segurivi.cl",
+    "body": "Don Gerardo, junto con saludar adjunto orden de compra.Atte.\n-- \n \n Samuel Garrido Zapata\n \n \n \n \n \n \nJEFE DE BODEGA\n ING. EN ADMINISTRACIÓN DE EMPRESASASEOS SAN FRANCISCO - SEGURIVI - SOCIEDAD SAN JOSÉ\n(056) 957095369 - (042) 2430669\nsgarrido@segurivi.cl\n\nOficina Central Avenida Paul Harris N-810 Chillán\nAníbal Pinto N- 509\nEdif. Pedro de Valdivia N- 701 Concepción.\n\nManuel Bulnes\nN- 655 Temuco.",
+    "date": {
+      "time": "2025-04-21T10:24:32Z",
+      "timeStamp": 1745231072,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CAA4em0VfSjUF3GaYgubPKGhX9hNzqok--wbK_EKnADxXJs4x+w@mail.gmail.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "ORDEN DE COMPRA",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-21T16:25:00.277Z",
+    "dateUpdated": "2025-04-21T16:25:00.277Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1750,
+    "emailTo": "sgarrido@segurivi.cl",
+    "attachments": [
+      {
+        "id": 1902,
+        "name": "~WRD1651.jpg"
+      },
+      {
+        "id": 1903,
+        "name": "image003.jpg"
+      },
+      {
+        "id": 1904,
+        "name": "image004.jpg"
+      }
+    ],
+    "extId": "X5c2d182fcb0647cc422d31c99f268be42b99c563",
+    "accountId": 1565,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "gerardo.alarcon@bienek.cl",
+    "body": "Hola ingresado para despacho AtteGerardo Alarcon\nDe: Samuel Garrido &lt;sgarrido@segurivi.cl&gt; Enviado el: lunes, 21 de abril de 2025 10:24Para: gerardo alarcon alarcon &lt;gerardo.alarcon@bienek.cl&gt;Asunto: ORDEN DE COMPRA\nDon Gerardo, junto con saludar adjunto orden de compra.\nAtte.\n\n-- \n\n \n Samuel Garrido Zapata\n \n \n \n \n \n \nJEFE DE BODEGA\n ING. EN ADMINISTRACIÓN DE EMPRESASASEOS SAN FRANCISCO - SEGURIVI - SOCIEDAD SAN JOSÉ\n(056) 957095369 - (042) 2430669\nsgarrido@segurivi.cl\n\nOficina Central Avenida Paul Harris N-810 Chillán\n\nAníbal Pinto N- 509\nEdif. Pedro de Valdivia N- 701 Concepción.\n\nManuel Bulnes\nN- 655 Temuco.",
+    "date": {
+      "time": "2025-04-21T11:19:00Z",
+      "timeStamp": 1745234340,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<000c01dbb2d0$d306edf0$7914c9d0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: ORDEN DE COMPRA",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-21T17:20:19.72Z",
+    "dateUpdated": "2025-04-21T17:20:19.72Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1751,
+    "emailTo": "pvalenzuelap@apstalca.cl",
+    "attachments": [
+      {
+        "id": 1905,
+        "name": "image001.jpg"
+      }
+    ],
+    "extId": "X9b5ed5b3fa724f1b62f18975262c73f4ea3e6c52",
+    "accountId": 2035,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "carlos.villanueva@bienek.cl",
+    "body": "Estimada Paola, muy buenos días, acuso recibo de su mail\nQuedamos en contactoCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nDe: Paola Valenzuela Peralta &lt;pvalenzuelap@apstalca.cl&gt; Enviado el: lunes, 21 de abril de 2025 10:17Para: carlos.villanueva@bienek.clAsunto: Re: Convenio SAR y SAPU 2292-394-CM25\nBuenos días, junto con saludar, agradezco la coordinación y en virtud a lo señalado con antelación, especialmente considerando el gran volumen de productos a despachar y recibir, asociados a OC 2292-394-CM25, solicitamos dar cumplimiento cabalmente a los previos acuerdos y generar el ingreso de los productos el día martes 29/04/2025.\nQue tenga una excelente semana.\nSaludos cordiales,\n\nEl jue, 10 abr 2025 a las 18:14, &lt;carlos.villanueva@bienek.cl&gt; escribió:Estimada sra Paola, muy buenas tardes, gusto de saludarla, hoy en la tarde nos llegó la orden de compra 2292-394-CM25\n\nConsulta ¿para qué fecha necesita el despacho?\n\nQuedo a la espera de su retroalimentaciónCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T11:45:00Z",
+      "timeStamp": 1745235900,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<004301dbb2d4$631e90c0$295bb240$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Convenio SAR y SAPU 2292-394-CM25",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T17:45:46.163Z",
+    "dateUpdated": "2025-04-21T17:45:46.163Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1752,
+    "emailTo": "ricardo.lagos@hospitalcanete.cl",
+    "attachments": [],
+    "extId": "X41f6fe06036b5ea1708114e92be1aa57f94121b8",
+    "accountId": 773,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenos dias :\n\n Don Ricardo esperando que se encuentre muy bien consulto a usted si la Reunión del día Miércoles 23-04-2025 podría ser a las 11:00 am \n, esto para dejar agendado y planificar ruta de ese día … se despide a su disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: jueves, 17 de abril de 2025 9:37Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.cl; NICOLE PINTO &lt;nicole.pinto@hospitalcanete.cl&gt;CC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buen día, espernado se encuentren bien, reitero correo de proveedor, para r3alizar la coordinación correspondiente.\n\nSaludos.\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mié, 16 de abr de 2025, 13:42, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien , agradecería favor confirmar hora estimada para agendar visita el día Miércoles 23-04-2025 en compañía de nuestro representante de SoFtys en las instalaciones de su Hospital … se despide muy atento a su respuesta \nAtte. .\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: martes, 15 de abril de 2025 12:58Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.clCC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buenas tardes, envío solicitud de proveedor para reunión comentada anteriormente. Esto para coordinar el día en que estará en el establecimiento.\nQuedamos atentos a su confirmación.\n\nSaludos.\n\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mar, 15 de abr de 2025, 11:48, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien y según lo conversado, \nme gustaría agendar en conjunto reunión para el dia Miércoles 23 /04/2025 durante la mañana para implementar piloto tanto de toalla e higiénico de nuestra alternativa Elite Professional … ante cualquier duda quedo a su disposición \nAtte..\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T11:55:00Z",
+      "timeStamp": 1745236500,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<005201dbb2d5$e1fbb7f0$a5f327d0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-21T17:56:50.257Z",
+    "dateUpdated": "2025-04-21T17:56:50.257Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1753,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "X92677d934540333fd9862f7b14374620606d189b",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "gerardo.alarcon@bienek.cl",
+    "body": "Hola solicito precio para alcohol spray 12x400ml Servicio salud Ñuble licitación por 24 mesesAtteGerardo Alarcon",
+    "date": {
+      "time": "2025-04-21T12:33:00Z",
+      "timeStamp": 1745238780,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<004d01dbb2db$11b33220$35199660$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "licitacion de alcohol spray  24 meses SSÑ",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-21T18:33:42.407Z",
+    "dateUpdated": "2025-04-21T18:33:42.407Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1754,
+    "emailTo": "patricio.perez@bienek.cl",
+    "attachments": [],
+    "extId": "X0760db23911df0c692ea8d08ad446460d14545e4",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "PatricioRequiero Cuentas de la competencia que podamos “barrer” con Softys y ganarlas como clientes.De mayor a menor en Volumen (independiente si es público o privado).\n\nOjalá me lo envié hoy hasta el final del día\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T12:54:34Z",
+      "timeStamp": 1745240074,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<366201dbb2de$10b765a0$322630e0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Softys",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 100,
+    "dateCreated": "2025-04-21T18:55:24.903Z",
+    "dateUpdated": "2025-04-21T18:55:24.903Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1755,
+    "emailTo": "Carlos.villanueva@bienek.cl",
+    "attachments": [
+      {
+        "id": 1906,
+        "name": "image001.png"
+      },
+      {
+        "id": 1907,
+        "name": "image002.png"
+      },
+      {
+        "id": 1908,
+        "name": "image003.png"
+      },
+      {
+        "id": 1909,
+        "name": "image004.png"
+      },
+      {
+        "id": 1910,
+        "name": "image005.png"
+      },
+      {
+        "id": 1911,
+        "name": "image006.png"
+      },
+      {
+        "id": 1912,
+        "name": "image007.jpg"
+      }
+    ],
+    "extId": "X795fe89d8a1a8341958a7c2d9e530e33809ff421",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Carlos Buenas tardes,\nEn adjunto los casos planteados:\n1.\n\n Cliente IND; código CM7024; Cliente tiene Matriz y a un costo de $8.100, vigente desde fecha Octubre, la matriz tiene además códigos vigente para el CM0971 \ny el CM7061, también vendidos en esta venta (mes Marzo) y pagados bajo la matriz vigente.\n2.\n\n Hospital de Linares; código CM0254, Cliente tiene Matriz y a un costo de $8.800, vigente desde Enero, la matriz tiene además CM8148-1.\n En este cliente el código CM8651-1 que no está en la Matriz se pagó según lista de Gobierno.\n3.\n\n Municipalidad Depto Talca; código CM0724, Cliente tiene Matriz y a un costo de $7.600, vigente desde Noviembre, la matriz tiene además el código CM0552 pagado en base a ella. Los códigos CM0844-1;CM2041-1;CM2093 y CM7061 que no están en la matriz, se pagaron en base a la lista de Gobierno.\n\nCarlos, en resumen, los cálculos están bien, el criterio usado es el vigente, es decir, los clientes que tienen Matriz rige la misma para los códigos que contiene la misma, los demás códigos que no están en la matriz rige la Lista de Gobierno del mes.\n\n Las matrices están todas informadas desde el momento que nos la hacen llegar, \n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl [mailto:carlos.villanueva@bienek.cl] Enviado el: lunes, 14 de abril de 2025 13:00Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;CC: jan.haas@bienek.clAsunto: RE: Detalle de comisiones- Marzo 2025\nEstimada Claudia, acuso recibo detalle de comisiones, solicito revisar lo siguiente:\n\nRespecto a la venta realizada al IND de Talca, dice 0 pago de comisión, debería ser un 1% de comisiónSituación que no corresponde porque según listado vigente para Marzo y Abril 2025 de CMPC, el costo es de $7.190, es decir falta comisión por $28.385\n\nSobre el Hospital de Linares, pasa lo mismo, dice 0 pago de comisión, debería ser un 1% de comisiónOtra vez, el costo es de $8.290, es decir falta comisión por $50.661\n\nPara el departamento de salud de Talca, dice 1% pago de comisión, debería ser un 2% de comisiónSegún listado aún vigente para Marzo y Abril 2025 de CMPC, el costo es de $7.190, es decir falta comisión por $43.500\n\nFaltarían $122.546 por misionesQuedo muy atento a la espera de su retroalimentaciónCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: lunes, 14 de abril de 2025 10:52Para: carlos.villanueva@bienek.clCC: jan.haas@bienek.clAsunto: RE: Detalle de comisiones- Marzo 2025Importancia: Alta\n\nBuen día Carlos,En adjunto lo solicitado.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl [mailto:carlos.villanueva@bienek.cl] Enviado el: viernes, 11 de abril de 2025 15:10Para: &#39;Jan Haas&#39; &lt;jan.haas@bienek.cl&gt;CC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Detalle de comisiones- Marzo 2025\nEstimado Jan, muy buenas tardes, gusto de saludarlo, por favor solicito el envío del detalle de las comisiones pagadas el día de ayer\n\nQuedo muy atento a la espera de su respuestaCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T13:26:35Z",
+      "timeStamp": 1745241995,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<369c01dbb2e2$89503650$9bf0a2f0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: Detalle de comisiones- Marzo 2025",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T19:26:54.51Z",
+    "dateUpdated": "2025-04-21T19:26:54.51Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1756,
+    "emailTo": "carlos.villanueva@bienek.cl",
+    "attachments": [],
+    "extId": "Xd0fd1f2e8447412ce13ff16422b7126269429089",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "angie.jofre@bienek.cl",
+    "body": "Carlos, buenas tardesComo le fue con este caso?Me comenta por favor\n\nAngie Jofré MerinoJefe de Operaciones y Clientes BIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: viernes, 04 de abril de 2025 12:12Para: &#39;Carlos Villanueva&#39; &lt;carlos.villanueva@bienek.cl&gt;CC: claudia.caamano@bienek.clAsunto: RV: Catálogo artículos de aseo mercado publico región del mauleImportancia: Alta\nCarlos, buen díaFavor atender solicitud, contactar a la persona.Nos cuenta cómo le va.Gracias.\n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: HERNAN PARRA &lt;hernan.edmundoparrac@gmail.com&gt; Enviado el: viernes, 04 de abril de 2025 9:55Asunto: Catálogo artículos de aseo mercado publico región del maule\nBuenos días se requiere catálogo mercado publico región Maule... atte..Libre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T14:45:18Z",
+      "timeStamp": 1745246718,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<004001dbb2ed$812265b0$83673110$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RV: Catálogo artículos de aseo mercado publico región del maule",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T20:45:39.11Z",
+    "dateUpdated": "2025-04-21T20:45:39.11Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1757,
+    "emailTo": "Carlos.villanueva@bienek.cl",
+    "attachments": [
+      {
+        "id": 1913,
+        "name": "image001.jpg"
+      }
+    ],
+    "extId": "Xbf908f1e8a5bac43165e1078da9ba33279618fa1",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "angie.jofre@bienek.cl",
+    "body": "Carlos, buenas tardesNecesito saber si cliente cuenta con maquina para descargar los pallet? Entiendo que por eso piden paletizado?El cliente tiene pallet azules para devolver? \nFavor indicar \n\nAngie Jofré MerinoJefe de Operaciones y Clientes BIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: miércoles, 02 de abril de 2025 18:07Para: &#39;carlos.villanueva@bienek.cl&#39; &lt;carlos.villanueva@bienek.cl&gt;CC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RE: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEKImportancia: Alta\nCarlos, buenas tardes Mis comentarios con respecto a las 4 observaciones del cliente:\nCon respecto a la descarga en pallet y que la mercadería va a piso, lo siguiente: No se nos informó en ninguna ocasión una solicitud especial del cliente que necesita la mercadería “paletizada”, tampoco estábamos al tanto de que no tenían pallet (todas las entregas pasadas fueron así, ellos tenían los pallet allá). Favor aclarar punto con el cliente. \nNormalmente van 2 vehículos para estas entregas, no de las mismas dimensiones, ambos con diferentes cargas. Es imposible que lleguen a la misma hora dado lo mencionado anteriormente, peso y dimensiones de los vehículo.La salida desde acá es a las 06:00 hrs. siempre, no hay posibilidad que salgan antes. Considerar también que solo serán 3 personas para las descargas grandes, no más que eso.\n\nNo traían pallets para la descarga. Los productos venían &#34;a piso&#34;, por lo cual la entrega en menos eficiente.Habían hasta las 11:00 AM aprox., sólo 2 funcionarios de la Empresa que representa generando la entrega y a partir de la hora señala 3 personas.El camión llegó, a nuestras dependencias,\ncerca de las 10:00 AM con alto volumen de productos asociados a OC 2292-192-CM25, por lo que aún se encuentran en el proceso de descarga.\nFavor considerar.\n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl &lt;carlos.villanueva@bienek.cl&gt; Enviado el: martes, 18 de marzo de 2025 13:07Para: &#39;Angie Jofré Merino&#39; &lt;angie.jofre@bienek.cl&gt;CC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RV: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK\nEstimada Angie, muy buenas tardes, en correo de arrastre me hacen llegar 4 observaciones respecto a la entrega del día de hoy\n\nReitero, en cuanto a Municipalidades es el cliente más importante, por lo que solicito revisar las observaciones para mejorar el servicio, por favor\n\nQuedo a la espera de su retroalimentación\n\nDe: Paola Valenzuela Peralta &lt;pvalenzuelap@apstalca.cl&gt; Enviado el: martes, 18 de marzo de 2025 12:32Para: Carlos Villanueva &lt;carlos.villanueva@bienek.cl&gt;Asunto: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK\nEstimado Carlos, junto con saludar, informo respecto a la entrega de productos programada para el día de hoy que:No traían pallets para la descarga,\nLos productos venían &#34;a piso&#34;, por lo cual la entrega en menos eficiente,\nHabían hasta las 11:00 AM aprox., sólo 2 funcionarios de la Empresa que representa generando la entrega y a partir de la hora señala 3 personas.El camión llegó, a nuestras dependencias,\ncerca de las 10:00 AM con alto volúmen de productos asociados a OC 2292-192-CM25, por lo que aún se encuentran en el proceso de descarga.\nLo anterior, para conocimiento y fines pertinentes.\nSaludos cordiales,\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T14:46:37Z",
+      "timeStamp": 1745246797,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<004501dbb2ed$b053d940$10fb8bc0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RV: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T20:46:56.39Z",
+    "dateUpdated": "2025-04-21T20:46:56.39Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1758,
+    "emailTo": "angie.jofre@bienek.cl",
+    "attachments": [
+      {
+        "id": 1914,
+        "name": "image002.jpg"
+      }
+    ],
+    "extId": "X907495d894fa363f457e2eae4fe91f9a3bb582c1",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "carlos.villanueva@bienek.cl",
+    "body": "Hola Angie, compartí el catalogo, pero no hubo retroalimentación hasta el momento\n\nAtteCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 14:45Para: &#39;Carlos Villanueva&#39; &lt;carlos.villanueva@bienek.cl&gt;Asunto: RV: Catálogo artículos de aseo mercado publico región del mauleImportancia: Alta\nCarlos, buenas tardesComo le fue con este caso?Me comenta por favor\n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: viernes, 04 de abril de 2025 12:12Para: &#39;Carlos Villanueva&#39; &lt;carlos.villanueva@bienek.cl&gt;CC: claudia.caamano@bienek.clAsunto: RV: Catálogo artículos de aseo mercado publico región del mauleImportancia: Alta\nCarlos, buen díaFavor atender solicitud, contactar a la persona.Nos cuenta cómo le va.Gracias.\n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: HERNAN PARRA &lt;hernan.edmundoparrac@gmail.com&gt; Enviado el: viernes, 04 de abril de 2025 9:55Asunto: Catálogo artículos de aseo mercado publico región del maule\nBuenos días se requiere catálogo mercado publico región Maule... atte..\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T15:23:00Z",
+      "timeStamp": 1745248980,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001001dbb2f2$de1cc9e0$9a565da0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Catálogo artículos de aseo mercado publico región del maule",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T21:23:55.373Z",
+    "dateUpdated": "2025-04-21T21:23:55.373Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1759,
+    "emailTo": "angie.jofre@bienek.cl",
+    "attachments": [
+      {
+        "id": 1915,
+        "name": "image003.jpg"
+      },
+      {
+        "id": 1916,
+        "name": "image001.jpg"
+      },
+      {
+        "id": 1917,
+        "name": "image002.jpg"
+      }
+    ],
+    "extId": "Xe9f4fd681f658d747ff28c19d74843fbaecbf12a",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "carlos.villanueva@bienek.cl",
+    "body": "Hola Angie, buenas tardes\nCliente no cuenta con máquina para descargar\nCarlos Villanueva\nEjecutivo de Ventas+569 77970400Carlos.villanueva@bienek.cl\nBIENEKSebastian Elcano N.1910Parque Industrial San AndresConcepcion / Chile56(41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 14:46Para: &#39;Carlos Villanueva&#39; &lt;carlos.villanueva@bienek.cl&gt;CC: paulina.saez@bienek.clAsunto: RV: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEKImportancia: Alta\nCarlos, buenas tardesNecesito saber si cliente cuenta con maquina para descargar los pallet? Entiendo que por eso piden paletizado?El cliente tiene pallet azules para devolver? \nFavor indicar \n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino &lt;angie.jofre@bienek.cl&gt; Enviado el: miércoles, 02 de abril de 2025 18:07Para: &#39;carlos.villanueva@bienek.cl&#39; &lt;carlos.villanueva@bienek.cl&gt;CC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RE: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEKImportancia: Alta\nCarlos, buenas tardes Mis comentarios con respecto a las 4 observaciones del cliente:\nCon respecto a la descarga en pallet y que la mercadería va a piso, lo siguiente: No se nos informó en ninguna ocasión una solicitud especial del cliente que necesita la mercadería “paletizada”, tampoco estábamos al tanto de que no tenían pallet (todas las entregas pasadas fueron así, ellos tenían los pallet allá). Favor aclarar punto con el cliente. \nNormalmente van 2 vehículos para estas entregas, no de las mismas dimensiones, ambos con diferentes cargas. Es imposible que lleguen a la misma hora dado lo mencionado anteriormente, peso y dimensiones de los vehículo.La salida desde acá es a las 06:00 hrs. siempre, no hay posibilidad que salgan antes. Considerar también que solo serán 3 personas para las descargas grandes, no más que eso.\n\nNo traían pallets para la descarga. Los productos venían &#34;a piso&#34;, por lo cual la entrega en menos eficiente.Habían hasta las 11:00 AM aprox., sólo 2 funcionarios de la Empresa que representa generando la entrega y a partir de la hora señala 3 personas.El camión llegó, a nuestras dependencias,\ncerca de las 10:00 AM con alto volumen de productos asociados a OC 2292-192-CM25, por lo que aún se encuentran en el proceso de descarga.\nFavor considerar.\n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: carlos.villanueva@bienek.cl &lt;carlos.villanueva@bienek.cl&gt; Enviado el: martes, 18 de marzo de 2025 13:07Para: &#39;Angie Jofré Merino&#39; &lt;angie.jofre@bienek.cl&gt;CC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RV: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK\nEstimada Angie, muy buenas tardes, en correo de arrastre me hacen llegar 4 observaciones respecto a la entrega del día de hoy\n\nReitero, en cuanto a Municipalidades es el cliente más importante, por lo que solicito revisar las observaciones para mejorar el servicio, por favor\n\nQuedo a la espera de su retroalimentación\n\nDe: Paola Valenzuela Peralta &lt;pvalenzuelap@apstalca.cl&gt; Enviado el: martes, 18 de marzo de 2025 12:32Para: Carlos Villanueva &lt;carlos.villanueva@bienek.cl&gt;Asunto: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK\nEstimado Carlos, junto con saludar, informo respecto a la entrega de productos programada para el día de hoy que:No traían pallets para la descarga,\nLos productos venían &#34;a piso&#34;, por lo cual la entrega en menos eficiente,\nHabían hasta las 11:00 AM aprox., sólo 2 funcionarios de la Empresa que representa generando la entrega y a partir de la hora señala 3 personas.El camión llegó, a nuestras dependencias,\ncerca de las 10:00 AM con alto volúmen de productos asociados a OC 2292-192-CM25, por lo que aún se encuentran en el proceso de descarga.\nLo anterior, para conocimiento y fines pertinentes.\nSaludos cordiales,\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T15:27:00Z",
+      "timeStamp": 1745249220,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001f01dbb2f3$5de4bbb0$19ae3310$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Respecto a recepción de productos hoy 18-03-2025, OC 2292-192-CM25 BIENEK",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-21T21:27:33.45Z",
+    "dateUpdated": "2025-04-21T21:27:33.45Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1760,
+    "emailTo": "angie.jofre@bienek.cl",
+    "attachments": [
+      {
+        "id": 1918,
+        "name": "Doc_5002662754.PDF"
+      }
+    ],
+    "extId": "Xf866aeabbbf8d46686d7a17497e5fad1c1919e4f",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "jose.mendoza@bienek.cl",
+    "body": "PARA FACTURAR, PORFA, GRACIAS\n\nAtte.\n\nJosé Mendoza A.\nBIENEK SPA.\n+56 9 94356331\n\n-----Mensaje original-----\nDe: INTERFAZ PROCESOS DE JOB \nEnviado el: lunes, 21 de abril de 2025 12:11\nPara: jose.mendoza@bienek.cl\nCC: czuniga@supplynet.cl\nAsunto: Facturar EM 5002662754 OC 4506966001 SAP 1137\n\nSr. Proveedor,\n\nSe ha efectuado el ingreso de Materiales. Se adjunta documento de recepción \nde mercancías con el detalle del ingreso para que proceda con la emisión de \nla factura, cualquier duda o consulta comunicarse al mail del comprador \nindicado en el documento adjunto.\n\nAtentamente,\n\nSistema SAP.",
+    "date": {
+      "time": "2025-04-21T16:00:00Z",
+      "timeStamp": 1745251200,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<002c01dbb2f8$0ac3a8b0$204afa10$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RV: Facturar EM 5002662754 OC 4506966001 SAP 1137",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 99,
+    "dateCreated": "2025-04-21T22:01:07.197Z",
+    "dateUpdated": "2025-04-21T22:01:07.197Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1761,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "X0ba80ba693acefcc8eb05327e853894c030e6347",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenas Tardes :\n\n Estimado Cristopher esperando que te estes muy bien , informo \nfecha y hora \nconfirmada por cliente es Miércoles 23-04-2025 a las 11:00 am para estar en las instalaciones del Hospital … ante cualquier duda quedo a tu disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl\n\nDe: alejandro.vallejos@bienek.cl &lt;alejandro.vallejos@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 11:56Para: &#39;Ricardo Lagos Muñoz&#39; &lt;ricardo.lagos@hospitalcanete.cl&gt;; &#39;Juan Luis Pérez&#39; &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; &#39;yessica.carrasco@hikll.cl&#39; &lt;yessica.carrasco@hikll.cl&gt;; &#39;NICOLE PINTO&#39; &lt;nicole.pinto@hospitalcanete.cl&gt;CC: &#39;csegura@softys.com&#39; &lt;csegura@softys.com&gt;Asunto: RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nBuenos dias :\n\n Don Ricardo esperando que se encuentre muy bien consulto a usted si la Reunión del día Miércoles 23-04-2025 podría ser a las 11:00 am \n, esto para dejar agendado y planificar ruta de ese día … se despide a su disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: jueves, 17 de abril de 2025 9:37Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.cl; NICOLE PINTO &lt;nicole.pinto@hospitalcanete.cl&gt;CC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buen día, espernado se encuentren bien, reitero correo de proveedor, para r3alizar la coordinación correspondiente.\n\nSaludos.\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mié, 16 de abr de 2025, 13:42, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien , agradecería favor confirmar hora estimada para agendar visita el día Miércoles 23-04-2025 en compañía de nuestro representante de SoFtys en las instalaciones de su Hospital … se despide muy atento a su respuesta \nAtte. .\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: martes, 15 de abril de 2025 12:58Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.clCC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buenas tardes, envío solicitud de proveedor para reunión comentada anteriormente. Esto para coordinar el día en que estará en el establecimiento.\nQuedamos atentos a su confirmación.\n\nSaludos.\n\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mar, 15 de abr de 2025, 11:48, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien y según lo conversado, \nme gustaría agendar en conjunto reunión para el dia Miércoles 23 /04/2025 durante la mañana para implementar piloto tanto de toalla e higiénico de nuestra alternativa Elite Professional … ante cualquier duda quedo a su disposición \nAtte..\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T16:06:00Z",
+      "timeStamp": 1745251560,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001501dbb2f8$daa71c60$8ff55520$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RV: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-21T22:06:50.677Z",
+    "dateUpdated": "2025-04-21T22:06:50.677Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1762,
+    "emailTo": "patricio.perez@bienek.cl",
+    "attachments": [],
+    "extId": "Xdb2bf398ce91d40cf540ee269443b6d51fd760d9",
+    "accountId": 2958,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "especialidadesodontologicasla@yahoo.cl",
+    "body": "Buen día don Patricio.Necesito me pueda enviar lo siguiente por favor.Soft Care all purpose foam Diversey . Jabon en espuma para manos, fragancia floral 1.3 litros. (1 caja )Toalla de manos scott (6 packs)Facturar a nombre de;Dr. Raul Escobar D y cía Limitada.78.121.730-1Anibal Pinto 215 of 407 Concepción.Direccion de envío\n\nManuel Rodriguez 173. Los AngelesDesde ya muchas graciasAtentamenteRocío LaraEspecialidades Odontológicas\nManuel Rodriguez 173 Los Ángeles\nFono 43-2534790 \n 43-2534791",
+    "date": {
+      "time": "2025-04-21T16:51:28Z",
+      "timeStamp": 1745254288,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<1234314601.115792.1745268639634@mail.yahoo.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "pedido",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 100,
+    "dateCreated": "2025-04-21T22:52:13.383Z",
+    "dateUpdated": "2025-04-21T22:52:13.383Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1763,
+    "emailTo": "Alejandro.vallejos@bienek.cl",
+    "attachments": [],
+    "extId": "X82f6a0d73aaeea67b848b3a0e22541ca71bd0b66",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Alejandro buenas tardes,\nCuál es el objetivo? Y cuál es el tamaño de la oportunidad?\nTambién saber en qué fase estamos con el cliente? Primera visita? O más avanzado vamos\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: alejandro.vallejos@bienek.cl [mailto:alejandro.vallejos@bienek.cl] Enviado el: lunes, 21 de abril de 2025 16:06Para: csegura@softys.comCC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RV: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nBuenas Tardes :\n\n Estimado Cristopher esperando que te estes muy bien , informo \nfecha y hora \nconfirmada por cliente es Miércoles 23-04-2025 a las 11:00 am para estar en las instalaciones del Hospital … ante cualquier duda quedo a tu disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: alejandro.vallejos@bienek.cl &lt;alejandro.vallejos@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 11:56Para: &#39;Ricardo Lagos Muñoz&#39; &lt;ricardo.lagos@hospitalcanete.cl&gt;; &#39;Juan Luis Pérez&#39; &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; &#39;yessica.carrasco@hikll.cl&#39; &lt;yessica.carrasco@hikll.cl&gt;; &#39;NICOLE PINTO&#39; &lt;nicole.pinto@hospitalcanete.cl&gt;CC: &#39;csegura@softys.com&#39; &lt;csegura@softys.com&gt;Asunto: RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nBuenos dias :\n\n Don Ricardo esperando que se encuentre muy bien consulto a usted si la Reunión del día Miércoles 23-04-2025 podría ser a las 11:00 am \n, esto para dejar agendado y planificar ruta de ese día … se despide a su disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: jueves, 17 de abril de 2025 9:37Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.cl; NICOLE PINTO &lt;nicole.pinto@hospitalcanete.cl&gt;CC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buen día, espernado se encuentren bien, reitero correo de proveedor, para r3alizar la coordinación correspondiente.\n\nSaludos.\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mié, 16 de abr de 2025, 13:42, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien , agradecería favor confirmar hora estimada para agendar visita el día Miércoles 23-04-2025 en compañía de nuestro representante de SoFtys en las instalaciones de su Hospital … se despide muy atento a su respuesta \nAtte. .\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: martes, 15 de abril de 2025 12:58Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.clCC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buenas tardes, envío solicitud de proveedor para reunión comentada anteriormente. Esto para coordinar el día en que estará en el establecimiento.\nQuedamos atentos a su confirmación.\n\nSaludos.\n\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mar, 15 de abr de 2025, 11:48, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien y según lo conversado, \nme gustaría agendar en conjunto reunión para el dia Miércoles 23 /04/2025 durante la mañana para implementar piloto tanto de toalla e higiénico de nuestra alternativa Elite Professional … ante cualquier duda quedo a su disposición \nAtte..\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T17:04:51Z",
+      "timeStamp": 1745255091,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<378e01dbb301$07e0e500$17a2af00$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-21T23:05:17.62Z",
+    "dateUpdated": "2025-04-21T23:05:17.62Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1764,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "Xa49f27835b7f3870d720fe269786e24bba3df2a9",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenas Tardes :\n\n Señorita Claudia cliente actualmente compran \nlínea Tork a otro proveedor, \n\nmotivo por el cual \nno se han podido cambiar \ndado la implementación de equipos, el objetivo es cambiar toda la papelería a Elite considerando en la reunión que tendremos implementación de pilotos (se llevaran el día mencionado ) y estadística de implementación de equipos que serian requeridos , en esta oportunidad se logró concretar reunión y autorización de probar una nueva línea en conjunto a las personas involucradas y a cargo de este servicio en el hospital, \nde conseguir los objetivos planteados deberíamos adjudicar la compra tanto de higiénico -toalla y sabanilla a través de convenio de forma mensual entre los montos de $5.000.000 a 7.000.000 por pedido \nAtte.\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl\n\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 17:05Para: alejandro.vallejos@bienek.cl; csegura@softys.comAsunto: RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETEImportancia: Alta\nAlejandro buenas tardes,\nCuál es el objetivo? Y cuál es el tamaño de la oportunidad?\nTambién saber en qué fase estamos con el cliente? Primera visita? O más avanzado vamos\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: alejandro.vallejos@bienek.cl [mailto:alejandro.vallejos@bienek.cl] Enviado el: lunes, 21 de abril de 2025 16:06Para: csegura@softys.comCC: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RV: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nBuenas Tardes :\n\n Estimado Cristopher esperando que te estes muy bien , informo \nfecha y hora \nconfirmada por cliente es Miércoles 23-04-2025 a las 11:00 am para estar en las instalaciones del Hospital … ante cualquier duda quedo a tu disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: alejandro.vallejos@bienek.cl &lt;alejandro.vallejos@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 11:56Para: &#39;Ricardo Lagos Muñoz&#39; &lt;ricardo.lagos@hospitalcanete.cl&gt;; &#39;Juan Luis Pérez&#39; &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; &#39;yessica.carrasco@hikll.cl&#39; &lt;yessica.carrasco@hikll.cl&gt;; &#39;NICOLE PINTO&#39; &lt;nicole.pinto@hospitalcanete.cl&gt;CC: &#39;csegura@softys.com&#39; &lt;csegura@softys.com&gt;Asunto: RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nBuenos dias :\n\n Don Ricardo esperando que se encuentre muy bien consulto a usted si la Reunión del día Miércoles 23-04-2025 podría ser a las 11:00 am \n, esto para dejar agendado y planificar ruta de ese día … se despide a su disposición \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: jueves, 17 de abril de 2025 9:37Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.cl; NICOLE PINTO &lt;nicole.pinto@hospitalcanete.cl&gt;CC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buen día, espernado se encuentren bien, reitero correo de proveedor, para r3alizar la coordinación correspondiente.\n\nSaludos.\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mié, 16 de abr de 2025, 13:42, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien , agradecería favor confirmar hora estimada para agendar visita el día Miércoles 23-04-2025 en compañía de nuestro representante de SoFtys en las instalaciones de su Hospital … se despide muy atento a su respuesta \nAtte. .\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nDe: Ricardo Lagos Muñoz &lt;ricardo.lagos@hospitalcanete.cl&gt; Enviado el: martes, 15 de abril de 2025 12:58Para: Juan Luis Pérez &lt;juanluis.perez@hospitalkallvullanka.cl&gt;; yessica.carrasco@hikll.clCC: csegura@softys.com; Alejandro Vallejos &lt;alejandro.vallejos@bienek.cl&gt;Asunto: Re: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE\nEstimados, buenas tardes, envío solicitud de proveedor para reunión comentada anteriormente. Esto para coordinar el día en que estará en el establecimiento.\nQuedamos atentos a su confirmación.\n\nSaludos.\n\nAtte.Ricardo Lagos M.—————Administrativo Unidad de Abastecimiento.\nHospital Intercultural Kallvu Llanka.Ruta P-60R Esquina Ruta P N°520 Entrada Norte, Cañete.Anexo MINSAL: 418745Fono: 56 41 2688745\nEl mar, 15 de abr de 2025, 11:48, &lt;alejandro.vallejos@bienek.cl&gt; escribió:Buenos días :\n\n Don Ricardo esperando que este muy bien y según lo conversado, \nme gustaría agendar en conjunto reunión para el dia Miércoles 23 /04/2025 durante la mañana para implementar piloto tanto de toalla e higiénico de nuestra alternativa Elite Professional … ante cualquier duda quedo a su disposición \nAtte..\n\n Alejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-21T17:53:00Z",
+      "timeStamp": 1745257980,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<008a01dbb307$d85d0780$89171680$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: IMPLEMENTACION DE PILOTO HOSPITAL DE CAÑETE",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-21T23:54:09.91Z",
+    "dateUpdated": "2025-04-21T23:54:09.91Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1765,
+    "emailTo": "angie.jofre@bienek.cl",
+    "attachments": [],
+    "extId": "X4e7facb0c8dd855cc30c306ffc21e28dd70dff14",
+    "accountId": -1,
+    "contactId": 304,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandra.ponce@bienek.cl",
+    "body": "Estimadas\nDeclaro siguientes clientes, con Lista Genérica Softys.(Venta iniciada abril)\n65061296-5 Educades65155421-7 Fund. Educ. Amanecer \nFavor considerar, gracias.\n\nAlejandra Ponce FritzEjecutivo de NegociosCel. +56 9 83168414\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T18:37:00Z",
+      "timeStamp": 1745260620,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<009401dbb30d$edea8cc0$c9bfa640$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "Lista Genérica ",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 102,
+    "dateCreated": "2025-04-22T00:41:26.467Z",
+    "dateUpdated": "2025-04-22T00:41:26.467Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1766,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "X747f5e80d3c7831c0f64cd1149ffb57c6285c8ad",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandra.ponce@bienek.cl",
+    "body": "Estimadas\nDeclaro siguientes clientes, con Lista Genérica Softys.(Venta iniciada abril)\n65061296-5 Educades65155421-7 Fund. Educ. Amanecer \nFavor considerar, gracias.\n\nAlejandra Ponce FritzEjecutivo de NegociosCel. +56 9 83168414\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl",
+    "date": {
+      "time": "2025-04-21T18:37:00Z",
+      "timeStamp": 1745260620,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<009401dbb30d$edea8cc0$c9bfa640$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "Lista Genérica ",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 102,
+    "dateCreated": "2025-04-22T00:41:26.607Z",
+    "dateUpdated": "2025-04-22T00:41:26.607Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1767,
+    "emailTo": "Alejandra.ponce@bienek.cl",
+    "attachments": [
+      {
+        "id": 1919,
+        "name": "jklqGfalUdrYrLCz.gif"
+      },
+      {
+        "id": 1920,
+        "name": "R1pJPgJZqvke0XZX.png"
+      },
+      {
+        "id": 1921,
+        "name": "kYx6lptesAGvMIVo.png"
+      },
+      {
+        "id": 1922,
+        "name": "qmP2SXMPL8z3RwTP.png"
+      },
+      {
+        "id": 1923,
+        "name": "d9CGAPfxeephetYX.png"
+      },
+      {
+        "id": 1924,
+        "name": "Q2WOzZeE2b0apxUa.png"
+      },
+      {
+        "id": 1925,
+        "name": "OC 12618.pdf"
+      }
+    ],
+    "extId": "X483bddd4cc671a1a00c2db6333c3b5597b9a6daa",
+    "accountId": 690,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "adquisiciones@rebisa.cl",
+    "body": "Estimada Alejandra:\n    Junto con saludar, adiciono OC N° 12618, correspondiente a :\n    \n    \n      \nToalla doble \n      \n      \nOmo\n    \n    Saludos\n    \n    -- \n      \n        \n          \n            \n              \n                \n                  \n                    \n                      \n                        \n                          \n                            \n                          \n                        \n                      \n                    \n                    \n                      \n                        \n                          \n                            \n                                Cecilia Reyes C. \n                              \n                                Abastecimiento y Servicios Generales \n                              \n                                Resinas del Bio Bio S.A. \n                            \n                              \n                                \n                                  \n                                    \n                                      \n                                        \n                                          \n                                            \n                                              \n                                                \n                                                  \n                                                    \n                                                    \n\n                                                    \n                                                          +56979591845 \n                                                  \n                                                \n                                              \n                                            \n                                          \n                                          \n                                            \n                                              \n                                                \n                                                  \n                                                    \n                                                    \n\n                                                    \n                                                          rebisa.cl \n                                                  \n                                                \n                                              \n                                            \n                                          \n                                          \n                                            \n                                              \n                                                \n                                                  \n                                                    \n                                                    \n\n                                                    \nadquisiciones@rebisa.cl \n                                                  \n                                                \n                                              \n                                            \n                                          \n                                          \n                                            \n                                              \n                                                \n                                                  \n                                                    \n                                                    \n\n                                                    \n                                                          Calle D Sitio\n                                                          9, Parque\n                                                          Empresarial\n                                                          Escuadrón II,\n                                                          Coronel.",
+    "date": {
+      "time": "2025-04-21T20:33:55Z",
+      "timeStamp": 1745267635,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<e93ad448-d9f7-4f10-8244-b1c7573f4203@rebisa.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "OC N° 12618",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 102,
+    "dateCreated": "2025-04-22T02:34:24.65Z",
+    "dateUpdated": "2025-04-22T02:34:24.65Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1768,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "Xb2f5bba390d9ca1090cb56fa046f6a8709a9fe6f",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "patricio.perez@bienek.cl",
+    "body": "Buenos días Jefa.\n\n \nPosibles clientes para esta modalidad:\n\nHospital Padre Las CasasPesquera Pacific BluHospital Santa JuanaHospital LajaDAS Laja.Hospital Santa BarbaraInmunomedicaVirginio GómezHospital PucónHospital CoronelDireccion de Salud LotaHospital LotaAgroindustrial Agrolomas\n (Tbn lo estoy prospectando con Kimberly.. pero trabajan con Cintec).InacapETC………\n\n \n\nHay mucho por hacer…..\n\n NOTA: No están ordenados por montos ya que no conozco sus volúmenes de compras.\n\n Sl2.\n\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 12:55Para: &#39;Patricio Perez&#39; &lt;patricio.perez@bienek.cl&gt;Asunto: Softys\nPatricioRequiero Cuentas de la competencia que podamos “barrer” con Softys y ganarlas como clientes.De mayor a menor en Volumen (independiente si es público o privado).\n\nOjalá me lo envié hoy hasta el final del día\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-22T07:09:00Z",
+      "timeStamp": 1745305740,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<004601dbb377$02084c60$0618e520$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Softys",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 100,
+    "dateCreated": "2025-04-22T13:10:21.56Z",
+    "dateUpdated": "2025-04-22T13:10:21.56Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1769,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [],
+    "extId": "X63c6a0889b3dc80edf6f70fc2561044ed64b93b6",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenos días :\n\n Señorita Claudia deseando un buen día solicito autorización de acceso para revisar \ny preparar propuesta de gran compra número 76422 de fundación integra …ante cualquier duda a su disposición \nAtte.\n\n \n\nAlejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl",
+    "date": {
+      "time": "2025-04-22T08:59:00Z",
+      "timeStamp": 1745312340,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001c01dbb386$53e52f80$fbaf8e80$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "Acceso a Mercado Publico Gran Compra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-22T14:59:31.057Z",
+    "dateUpdated": "2025-04-22T14:59:31.057Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1770,
+    "emailTo": "gerardo.alarcon@bienek.cl",
+    "attachments": [
+      {
+        "id": 1926,
+        "name": "image005.png"
+      },
+      {
+        "id": 1927,
+        "name": "image006.jpg"
+      },
+      {
+        "id": 1928,
+        "name": "image001.jpg"
+      }
+    ],
+    "extId": "X0e35f9bb9e91defe0f0bbcc61279b51ea6e68543",
+    "accountId": 1498,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "pavendano@copelec.cl",
+    "body": "Buenos días Don Gerardo, Adjunto el pedido por artículos de aseo.\n\nITEM\n\n ARTICULO\n\nCANTIDAD1\n\n Pack Higiénico Elite J\n\n (4x500)\n\n \n\n \n102\n\n Pack\n Toalla Elite Jumbo\n(2x250)\n\n \n15\n\n3\n\n jabón líquido\nElite\n(5lts.)\n\n \n\n \n\n 2\n\nSin otro particular, le saluda atte.\n\n Patricia Avendaño Arriagada\n Adm. Edificio Maipon Copelec\n (42) 2204479\n +569 74761581\n pavendano@copelec.cl\n www.copelec.cl",
+    "date": {
+      "time": "2025-04-22T09:13:28Z",
+      "timeStamp": 1745313208,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<!&!AAAAAAAAAAAYAAAAAAAAAE92sShxEDhCn5T7wIAFuCXCgAAAEAAAAFON+9wUqglMhEz7Jx9g/ksBAAAAAA==@copelec.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "SOLICITUD DE MATERIALES",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-22T15:15:38.443Z",
+    "dateUpdated": "2025-04-22T15:15:38.443Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1771,
+    "emailTo": "carlos.villanueva@bienek.cl",
+    "attachments": [],
+    "extId": "X8f5c8f3b255bc431aed6356fc5245d4c9c1ac995",
+    "accountId": 2035,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "pvalenzuelap@apstalca.cl",
+    "body": "Estimado Carlos, junto con saludar, informo que aún no recibimos los productos asociados a OC 2292-373-CM25, agradecemos informar al respecto y le recordamos el compromiso adquirido con antelación.Solicitamos canalizar la presente información con quien corresponda, con el propósito de dar cumplimiento a los acuerdos previos y solucionar este tipo de situaciones.Lo anterior, para conocimiento y fines pertinentes.Saludos cordiales,",
+    "date": {
+      "time": "2025-04-22T09:48:14Z",
+      "timeStamp": 1745315294,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CAAq9Nqy+vvgD8F=O+B_61eU9fLK5cwZERyooYj7QGT88tJcDpA@mail.gmail.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Respecto a recepción programada para hoy 22-04-2025 BIENEK, aún NO llegan",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 97,
+    "dateCreated": "2025-04-22T15:48:35.973Z",
+    "dateUpdated": "2025-04-22T15:48:35.973Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1772,
+    "emailTo": "Alejandro.vallejos@bienek.cl",
+    "attachments": [],
+    "extId": "X57154a03873d3e7825babc348c85f7018019fc12",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Alejandro buen díaAngie le indicará como procederemos.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: alejandro.vallejos@bienek.cl [mailto:alejandro.vallejos@bienek.cl] Enviado el: martes, 22 de abril de 2025 8:59Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Acceso a Mercado Publico Gran Compra \nBuenos días :\n\n Señorita Claudia deseando un buen día solicito autorización de acceso para revisar \ny preparar propuesta de gran compra número 76422 de fundación integra …ante cualquier duda a su disposición \nAtte.\n\nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-22T10:10:40Z",
+      "timeStamp": 1745316640,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<38dc01dbb390$56071990$02154cb0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: Acceso a Mercado Publico Gran Compra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-22T16:11:06.443Z",
+    "dateUpdated": "2025-04-22T16:11:06.443Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1773,
+    "emailTo": "gerardo.alarcon@bienek.cl",
+    "attachments": [
+      {
+        "id": 1929,
+        "name": "image001.png"
+      },
+      {
+        "id": 1930,
+        "name": "JVIZCARRA U4P0000637003_1.pdf"
+      },
+      {
+        "id": 1931,
+        "name": "img20250422_10122381.pdf"
+      }
+    ],
+    "extId": "X8813d42d0e5b156727229dbc7451c616dc01004f",
+    "accountId": 1494,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "jvizcarra@udec.cl",
+    "body": "Don Gerardo\n\nAdjunto Orden de Compra N°4600119425 y Guías Despachos por Anticipo\nN°20264\nN°20277\nPara considerar en Despacho\n\nAgradeciendo su colaboración\n\nAtte.",
+    "date": {
+      "time": "2025-04-22T10:21:04Z",
+      "timeStamp": 1745317264,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CPWP152MB7138E41B032A01073EA7942EA0BB2@CPWP152MB7138.LAMP152.PROD.OUTLOOK.COM>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Orden",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-22T16:25:34.83Z",
+    "dateUpdated": "2025-04-22T16:25:34.83Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1774,
+    "emailTo": "pavendano@copelec.cl",
+    "attachments": [
+      {
+        "id": 1932,
+        "name": "image003.jpg"
+      },
+      {
+        "id": 1933,
+        "name": "image001.jpg"
+      },
+      {
+        "id": 1934,
+        "name": "image002.png"
+      }
+    ],
+    "extId": "X8a26a5ff5e33adf70d99f8aae8ac0021a57de42a",
+    "accountId": 1498,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "gerardo.alarcon@bienek.cl",
+    "body": "Hola ingreso para despachoAtteGerardo Alarcon\nDe: Patricia Avendaño &lt;pavendano@copelec.cl&gt; Enviado el: martes, 22 de abril de 2025 9:14Para: gerardo.alarcon@bienek.clAsunto: SOLICITUD DE MATERIALESImportancia: Alta\nBuenos días Don Gerardo, Adjunto el pedido por artículos de aseo.\n\nITEM\n\n ARTICULO\n\nCANTIDAD1\n\n Pack Higiénico Elite J\n\n (4x500)\n\n \n\n \n102\n\n Pack\n Toalla Elite Jumbo\n(2x250)\n\n \n15\n\n3\n\n jabón líquido\nElite\n(5lts.)\n\n \n\n \n\n 2\n\nSin otro particular, le saluda atte.\n\n Patricia Avendaño Arriagada\n Adm. Edificio Maipon Copelec\n (42) 2204479\n +569 74761581\n pavendano@copelec.cl\n www.copelec.cl",
+    "date": {
+      "time": "2025-04-22T12:14:00Z",
+      "timeStamp": 1745324040,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<00ac01dbb3a1$a91dca50$fb595ef0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: SOLICITUD DE MATERIALES",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-22T18:15:15.887Z",
+    "dateUpdated": "2025-04-22T18:15:15.887Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1775,
+    "emailTo": "jvizcarra@udec.cl",
+    "attachments": [
+      {
+        "id": 1935,
+        "name": "image001.png"
+      }
+    ],
+    "extId": "Xcddf65ecfe93efbdf47d5074b0da814e067ac818",
+    "accountId": 1494,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "gerardo.alarcon@bienek.cl",
+    "body": "Hola ingreso para despachoAtteGerardo Alarcon\nDe: José Raúl Vizcarra Leiva &lt;jvizcarra@udec.cl&gt; Enviado el: martes, 22 de abril de 2025 10:20Para: Gerardo Alarcon &lt;gerardo.alarcon@bienek.cl&gt;Asunto: Orden\nDon Gerardo\nAdjunto Orden de Compra N°4600119425 y Guías Despachos por AnticipoN°20264N°20277Para considerar en Despacho\nAgradeciendo su colaboración\nAtte.",
+    "date": {
+      "time": "2025-04-22T12:15:00Z",
+      "timeStamp": 1745324100,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<00bb01dbb3a1$bbb9bca0$332d35e0$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Orden",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-22T18:15:45.183Z",
+    "dateUpdated": "2025-04-22T18:15:45.183Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1776,
+    "emailTo": "patricio.perez@bienek.cl",
+    "attachments": [],
+    "extId": "X9b25a9427cd4a48a541c71e28f96242145e8925b",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Ok Patricio.\nProcesaremos que clientes podemos priorizar.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: patricio.perez@bienek.cl [mailto:patricio.perez@bienek.cl] Enviado el: martes, 22 de abril de 2025 7:09Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: RE: Softys\nBuenos días Jefa.\n\n \nPosibles clientes para esta modalidad:\n\nHospital Padre Las CasasPesquera Pacific BluHospital Santa JuanaHospital LajaDAS Laja.Hospital Santa BarbaraInmunomedicaVirginio GómezHospital PucónHospital CoronelDireccion de Salud LotaHospital LotaAgroindustrial Agrolomas\n (Tbn lo estoy prospectando con Kimberly.. pero trabajan con Cintec).InacapETC………\n\n \n\nHay mucho por hacer…..\n\n NOTA: No están ordenados por montos ya que no conozco sus volúmenes de compras.\n\n Sl2.\n\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: lunes, 21 de abril de 2025 12:55Para: &#39;Patricio Perez&#39; &lt;patricio.perez@bienek.cl&gt;Asunto: Softys\nPatricioRequiero Cuentas de la competencia que podamos “barrer” con Softys y ganarlas como clientes.De mayor a menor en Volumen (independiente si es público o privado).\n\nOjalá me lo envié hoy hasta el final del día\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-22T12:49:55Z",
+      "timeStamp": 1745326195,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<39dc01dbb3a6$9561cfc0$c0256f40$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: Softys",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 100,
+    "dateCreated": "2025-04-22T19:00:53.453Z",
+    "dateUpdated": "2025-04-22T19:00:53.453Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1777,
+    "emailTo": "Alejandro.vallejos@bienek.cl",
+    "attachments": [
+      {
+        "id": 1936,
+        "name": "image001.jpg"
+      }
+    ],
+    "extId": "X1e087b84a226ee5f02e592cc5fb8bd41ac30f3af",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "claudia.caamano@bienek.cl",
+    "body": "Alejandro Ahora si se puede.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino [mailto:angie.jofre@bienek.cl] Enviado el: martes, 22 de abril de 2025 11:48Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;; alejandro.vallejos@bienek.clAsunto: RE: Acceso a Mercado Publico Gran Compra Importancia: Alta\nBuen dia,Por ahora no es posible ya que la página esta presetando inconvenientes.\n\nEstaré monitoreando durante el día y les comento. \n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: martes, 22 de abril de 2025 10:11Para: alejandro.vallejos@bienek.clCC: angie.jofre@bienek.clAsunto: RE: Acceso a Mercado Publico Gran Compra \n\n Alejandro buen díaAngie le indicará como procederemos.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: alejandro.vallejos@bienek.cl [mailto:alejandro.vallejos@bienek.cl] Enviado el: martes, 22 de abril de 2025 8:59Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Acceso a Mercado Publico Gran Compra \nBuenos días :\n\n Señorita Claudia deseando un buen día solicito autorización de acceso para revisar \ny preparar propuesta de gran compra número 76422 de fundación integra …ante cualquier duda a su disposición \nAtte.\n\nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-22T12:55:44Z",
+      "timeStamp": 1745326544,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<39e501dbb3a7$65425d40$2fc717c0$@bienek.cl>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "RE: Acceso a Mercado Publico Gran Compra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-22T19:01:02.33Z",
+    "dateUpdated": "2025-04-22T19:01:02.33Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1778,
+    "emailTo": "claudia.caamano@bienek.cl",
+    "attachments": [
+      {
+        "id": 1937,
+        "name": "image001.jpg"
+      }
+    ],
+    "extId": "X97b3b593319c4d7f1170471a0c7490f0db6a0cdb",
+    "accountId": 3040,
+    "contactId": 302,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "alejandro.vallejos@bienek.cl",
+    "body": "Buenas Tardes :\n\n Señorita Claudia acuso recibo \nAtte.\n\n \nAlejandro Vallejos C. \n\nEjecutivo de Negocios \n BIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 3684 56 (41) 2635500 www.bienek.cl\n\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: martes, 22 de abril de 2025 12:56Para: &#39;Alejandro Vallejos&#39; &lt;alejandro.vallejos@bienek.cl&gt;CC: angie.jofre@bienek.clAsunto: RE: Acceso a Mercado Publico Gran Compra \nAlejandro Ahora si se puede.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Angie Jofré Merino [mailto:angie.jofre@bienek.cl] Enviado el: martes, 22 de abril de 2025 11:48Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;; alejandro.vallejos@bienek.clAsunto: RE: Acceso a Mercado Publico Gran Compra Importancia: Alta\nBuen dia,Por ahora no es posible ya que la página esta presetando inconvenientes.\n\nEstaré monitoreando durante el día y les comento. \n\nAngie Jofré MerinoJefe de Operaciones y Clientes\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: Claudia Caamaño &lt;claudia.caamano@bienek.cl&gt; Enviado el: martes, 22 de abril de 2025 10:11Para: alejandro.vallejos@bienek.clCC: angie.jofre@bienek.clAsunto: RE: Acceso a Mercado Publico Gran Compra \n\n Alejandro buen díaAngie le indicará como procederemos.\n\nClaudia Caamaño KrauseGerente Administración y Ventas\n\nBIENEK Juan Sebastián el Cano\nNº1910 Hualpén / Chile56 (41) 2635500www.bienek.cl\nDe: alejandro.vallejos@bienek.cl [mailto:alejandro.vallejos@bienek.cl] Enviado el: martes, 22 de abril de 2025 8:59Para: &#39;Claudia Caamaño&#39; &lt;claudia.caamano@bienek.cl&gt;Asunto: Acceso a Mercado Publico Gran Compra \nBuenos días :\n\n Señorita Claudia deseando un buen día solicito autorización de acceso para revisar \ny preparar propuesta de gran compra número 76422 de fundación integra …ante cualquier duda a su disposición \nAtte.\n\nAlejandro Vallejos C. \n\nEjecutivo de Negocios \nBIENEK \nJuan Sebastián el Cano\nNº1910 \nHualpén / Chile+ 56 98193 368456 (41) 2635500www.bienek.cl\n\nLibre de virus.www.avast.com",
+    "date": {
+      "time": "2025-04-22T13:22:00Z",
+      "timeStamp": 1745328120,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<001501dbb3ab$31455b10$93d01130$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "RE: Acceso a Mercado Publico Gran Compra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 101,
+    "dateCreated": "2025-04-22T19:23:24.79Z",
+    "dateUpdated": "2025-04-22T19:23:24.79Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1779,
+    "emailTo": "quezada-oscar@aramark.cl",
+    "attachments": [
+      {
+        "id": 1938,
+        "name": "image001.png"
+      },
+      {
+        "id": 1939,
+        "name": "porta mopa.pdf"
+      }
+    ],
+    "extId": "X50b3da27ddf6af11b1515789c4a88aec632b8e00",
+    "accountId": 1808,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "cristian.ochoa@bienek.cl",
+    "body": "Oscar\nEnvío valores solicitados\nSaludos\n\nCristian Ochoa V.Ejecutivo de NegociosJuan Sebastian Elcano N.1910Parque Industrial San AndresHualpen / Chile56(41)2635500+56 9 96798053cristian.ochoa@bienek.clwww.bienek.cl",
+    "date": {
+      "time": "2025-04-22T13:37:00Z",
+      "timeStamp": 1745329020,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<00ae01dbb3ad$47b8f760$d72ae620$@bienek.cl>",
+    "type": 1,
+    "mailFolder": "",
+    "subject": "cotizacion",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 98,
+    "dateCreated": "2025-04-22T19:38:40.997Z",
+    "dateUpdated": "2025-04-22T19:38:40.997Z",
+    "dateDeleted": null,
+    "deleted": false
+  },
+  {
+    "id": 1780,
+    "emailTo": "gerardo.alarcon@bienek.cl",
+    "attachments": [
+      {
+        "id": 1940,
+        "name": "OC Nª811 BPLC.pdf"
+      },
+      {
+        "id": 1941,
+        "name": "OC Nª812 HPLC.pdf"
+      },
+      {
+        "id": 1942,
+        "name": "OC N°818 CHILLAN.pdf"
+      }
+    ],
+    "extId": "X3b2ea0036ef558830e3e30aa3eb2292e08dc67d8",
+    "accountId": 1565,
+    "contactId": -1,
+    "opportunityId": -1,
+    "salesRepId": -1,
+    "emailFrom": "sgarrido@segurivi.cl",
+    "body": "Don Gerardo, adjunto orden de compra.Atte.-- \n \n Samuel Garrido Zapata\n \n \n \n \n \n \nJEFE DE BODEGA\n ING. EN ADMINISTRACIÓN DE EMPRESASASEOS SAN FRANCISCO - SEGURIVI - SOCIEDAD SAN JOSÉ\n(056) 957095369 - (042) 2430669\nsgarrido@segurivi.cl\n\nOficina Central Avenida Paul Harris N-810 Chillán\nAníbal Pinto N- 509\nEdif. Pedro de Valdivia N- 701 Concepción.\n\nManuel Bulnes\nN- 655 Temuco.",
+    "date": {
+      "time": "2025-04-22T13:39:21Z",
+      "timeStamp": 1745329161,
+      "timeZone": "UTC"
+    },
+    "originEmailId": "<CAA4em0XzxHM=q1bCCKEbPeuF4oTEiy2_JqAOLQf0P10=OiLnTg@mail.gmail.com>",
+    "type": 0,
+    "mailFolder": "",
+    "subject": "Orden de compra",
+    "salesRepIdDeleted": null,
+    "salesRepIdUpdated": 96,
+    "dateCreated": "2025-04-22T19:39:48.117Z",
+    "dateUpdated": "2025-04-22T19:39:48.117Z",
+    "dateDeleted": null,
+    "deleted": false
+  }
+]
