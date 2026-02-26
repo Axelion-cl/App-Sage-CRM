@@ -2,118 +2,148 @@ import { fetchFMEmails, fetchFMUsers } from '@/lib/forcemanager'
 import { classifyEmail } from '@/lib/classifier'
 import { supabase } from '@/lib/supabase'
 
+// Usuarios que NO son vendedores (excluir del dashboard)
+const EXCLUDED_USER_NAMES = [
+    'xavi',
+    'claudia caamaño',
+    'bienek force',
+]
+
+function isExcludedUser(user: any): boolean {
+    const fullName = `${user.name || ''} ${user.surname || ''}`.trim().toLowerCase()
+    return EXCLUDED_USER_NAMES.some(excluded => fullName.includes(excluded))
+}
+
 export interface AggregatedRep {
     id: number
     name: string
     ocCount: number
+    totalEmails: number
     lastOCAt: string | null
 }
 
-export async function getDashboardData() {
-    // Fetch users and today's received emails in parallel
-    const [usersData, emails] = await Promise.all([
-        fetchFMUsers(),
-        fetchFMEmails() // Now returns flat array of today's received emails
-    ])
+/**
+ * Obtiene los datos del dashboard para una fecha específica.
+ * Si targetDate es hoy, clasifica correos nuevos con Gemini.
+ * Si targetDate es un día pasado, solo lee de Supabase (datos ya clasificados).
+ */
+export async function getDashboardData(targetDate?: string): Promise<AggregatedRep[]> {
+    const todayStr = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Santiago' })
+    const dateStr = targetDate || todayStr
+    const isToday = dateStr === todayStr
 
-    // fetchFMUsers returns the array directly from the API
+    // Fetch users
+    const usersData = await fetchFMUsers()
     const users = Array.isArray(usersData) ? usersData : (usersData?.data || [])
 
-    console.log(`📊 [Dashboard] ${users.length} users, ${emails.length} received emails today`)
+    // Filtrar usuarios no vendedores
+    const salesUsers = users.filter((u: any) => !isExcludedUser(u))
 
-    // 1. Identificar correos no procesados (por fm_email_id en Supabase)
-    const fmEmailIds = emails.map((e: any) => e.id)
+    console.log(`📊 [Dashboard] ${salesUsers.length} vendedores, fecha: ${dateStr} ${isToday ? '(HOY)' : '(histórico)'}`)
 
-    let cachedIds = new Set<number>()
-    if (fmEmailIds.length > 0) {
-        const { data: cached } = await supabase
-            .from('tracking_emails')
-            .select('fm_email_id')
-            .in('fm_email_id', fmEmailIds)
+    // Solo clasificar correos nuevos si es el día de hoy
+    if (isToday) {
+        const emails = await fetchFMEmails(dateStr)
+        console.log(`📧 [Dashboard] ${emails.length} correos recibidos hoy`)
 
-        cachedIds = new Set(cached?.map(c => c.fm_email_id) || [])
-    }
+        // Identificar correos no procesados
+        const fmEmailIds = emails.map((e: any) => e.id)
+        let cachedIds = new Set<number>()
 
-    const newEmails = emails.filter((e: any) => !cachedIds.has(e.id))
-    console.log(`🆕 [Dashboard] ${newEmails.length} new emails to classify`)
+        if (fmEmailIds.length > 0) {
+            const { data: cached } = await supabase
+                .from('tracking_emails')
+                .select('fm_email_id')
+                .in('fm_email_id', fmEmailIds)
 
-    // 2. Clasificar nuevos correos con Gemini (Max 5 por carga para respetar Rate Limit de 15 RPM)
-    // La cuota gratuita permite 15 peticiones por minuto. Promise.all disparaba todas juntas.
-    const BATCH_SIZE = 5;
-    const emailsToProcess = newEmails.slice(0, BATCH_SIZE);
+            cachedIds = new Set(cached?.map(c => c.fm_email_id) || [])
+        }
 
-    if (newEmails.length > BATCH_SIZE) {
-        console.log(`⚠️ [Dashboard] Processing only first ${BATCH_SIZE} of ${newEmails.length} new emails to avoid timeouts/rate-limits.`);
-    }
+        const newEmails = emails.filter((e: any) => !cachedIds.has(e.id))
+        console.log(`🆕 [Dashboard] ${newEmails.length} correos nuevos por clasificar`)
 
-    const classifications = [];
+        // Clasificar nuevos correos (max 5 por carga)
+        const BATCH_SIZE = 5
+        const emailsToProcess = newEmails.slice(0, BATCH_SIZE)
 
-    for (const email of emailsToProcess) {
-        try {
-            // Añadir retardo artificial para respetar 15 RPM (aprox 1 req cada 4s)
-            // Si la respuesta tarda 1s, esperamos 3s más. Ajustamos a 2s de espera base.
-            if (classifications.length > 0) {
-                await new Promise(resolve => setTimeout(resolve, 2000));
+        if (newEmails.length > BATCH_SIZE) {
+            console.log(`⚠️ [Dashboard] Procesando solo los primeros ${BATCH_SIZE} de ${newEmails.length} nuevos.`)
+        }
+
+        const classifications = []
+        for (const email of emailsToProcess) {
+            try {
+                if (classifications.length > 0) {
+                    await new Promise(resolve => setTimeout(resolve, 2000))
+                }
+
+                const result = await classifyEmail(
+                    email.subject || '(sin asunto)',
+                    email.body || '',
+                    email.attachments || []
+                )
+
+                console.log(`🔍 [Classify] id=${email.id} | esOC=${result.esOC} | subject: ${email.subject?.substring(0, 50)}`)
+
+                classifications.push({
+                    fm_email_id: email.id,
+                    subject: email.subject || '(sin asunto)',
+                    is_oc: result.esOC,
+                    classification_reason: result.motivo,
+                    confidence: result.confianza || 'media',
+                    sales_rep_id: email.salesRepIdUpdated,
+                    received_at: email.date?.time || email.dateCreated
+                })
+            } catch (err) {
+                console.error(`❌ Error clasificando email ${email.id}:`, err)
             }
+        }
 
-            const result = await classifyEmail(
-                email.subject || '(sin asunto)',
-                email.body || '',
-                email.attachments || []
-            );
+        // Guardar en Supabase
+        if (classifications.length > 0) {
+            const { error } = await supabase
+                .from('tracking_emails')
+                .upsert(classifications, { onConflict: 'fm_email_id' })
 
-            console.log(`🔍 [Classify] id=${email.id} | esOC=${result.esOC} | subject: ${email.subject?.substring(0, 50)} | motivo: ${result.motivo?.substring(0, 60)}`);
-
-            classifications.push({
-                fm_email_id: email.id,
-                subject: email.subject || '(sin asunto)',
-                is_oc: result.esOC,
-                classification_reason: result.motivo,
-                sales_rep_id: email.salesRepIdUpdated,
-                received_at: email.date?.time || email.dateCreated
-            });
-
-        } catch (err) {
-            console.error(`❌ Error classifying email ${email.id}:`, err);
-            // Continue with next email
+            if (error) {
+                console.error('❌ Error guardando clasificaciones:', error.message)
+            } else {
+                const ocCount = classifications.filter(c => c.is_oc).length
+                console.log(`💾 [Dashboard] Guardadas ${classifications.length} clasificaciones (${ocCount} OCs)`)
+            }
         }
     }
 
-    // 3. Guardar en Supabase para caché (upsert to handle re-processing)
-    if (classifications.length > 0) {
-        const { error } = await supabase
-            .from('tracking_emails')
-            .upsert(classifications, { onConflict: 'fm_email_id' })
-        if (error) {
-            console.error('❌ Error saving classifications:', error.message)
-        } else {
-            const ocCount = classifications.filter(c => c.is_oc).length
-            console.log(`💾 [Dashboard] Saved ${classifications.length} classifications (${ocCount} OCs)`)
-        }
-    }
+    // Obtener TODAS las clasificaciones del día seleccionado
+    const nextDay = new Date(dateStr + 'T12:00:00')
+    nextDay.setDate(nextDay.getDate() + 1)
+    const nextDayStr = nextDay.toLocaleDateString('en-CA')
 
-    // 4. Obtener TODAS las OC clasificadas del día de hoy
-    const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Santiago' })
-    const { data: allOCs } = await supabase
+    const { data: dayEmails } = await supabase
         .from('tracking_emails')
         .select('*')
-        .eq('is_oc', true)
-        .gte('received_at', `${today}T00:00:00Z`)
+        .gte('received_at', `${dateStr}T00:00:00Z`)
+        .lt('received_at', `${nextDayStr}T00:00:00Z`)
 
-    console.log(`🎯 [Dashboard] ${allOCs?.length || 0} OCs detected today`)
+    const allOCs = dayEmails?.filter(e => e.is_oc) || []
 
-    // 5. Agregar por vendedor
-    const reps: AggregatedRep[] = users.map((user: any) => {
-        const userOCs = allOCs?.filter(oc => oc.sales_rep_id === user.id) || []
+    console.log(`🎯 [Dashboard] ${dayEmails?.length || 0} correos totales, ${allOCs.length} OCs para ${dateStr}`)
+
+    // Agregar por vendedor
+    const reps: AggregatedRep[] = salesUsers.map((user: any) => {
+        const userEmails = dayEmails?.filter(e => e.sales_rep_id === user.id) || []
+        const userOCs = userEmails.filter(e => e.is_oc)
         return {
             id: user.id,
             name: `${user.name || ''} ${user.surname || ''}`.trim(),
             ocCount: userOCs.length,
+            totalEmails: userEmails.length,
             lastOCAt: userOCs.length > 0
                 ? userOCs.sort((a, b) => new Date(b.received_at).getTime() - new Date(a.received_at).getTime())[0].received_at
                 : null
         }
     })
 
-    return reps.filter(r => r.ocCount > 0 || users.length < 20)
+    // Mostrar todos los vendedores si hay pocos, o solo los activos si hay muchos
+    return reps.filter(r => r.totalEmails > 0 || salesUsers.length < 20)
 }
