@@ -1,8 +1,11 @@
 import { supabase } from '@/lib/supabase'
 import { fetchFMUsers } from '@/lib/forcemanager'
-import { ChevronLeft, Clock, CheckCircle2, XCircle, FileText } from 'lucide-react'
+import { ChevronLeft, Clock, CheckCircle2, XCircle } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import SyncButton from './SyncButton'
+import FeedbackButtons from './FeedbackButtons'
+import ExpandableReason from './ExpandableReason'
 
 export const dynamic = 'force-dynamic'
 
@@ -61,7 +64,7 @@ export default async function SalesRepDetailPage({
             <header className="mb-10 animate-reveal">
                 <h1 className="text-4xl font-bold tracking-tight mb-2">{userName}</h1>
                 <p className="text-slate-400 capitalize">{displayDate}</p>
-                <div className="flex items-center gap-4 mt-4">
+                <div className="flex flex-wrap items-center gap-4 mt-4">
                     <div className="glass px-4 py-2 rounded-xl text-sm">
                         <span className="text-slate-500">Correos totales: </span>
                         <span className="font-bold text-slate-200">{emails.length}</span>
@@ -70,6 +73,9 @@ export default async function SalesRepDetailPage({
                         <span className="text-slate-500">Órdenes detectadas: </span>
                         <span className={`font-bold ${ocCount > 0 ? 'text-accent' : 'text-slate-200'}`}>{ocCount}</span>
                     </div>
+                </div>
+                <div className="mt-5">
+                    <SyncButton salesRepId={salesRepId} date={selectedDate} />
                 </div>
             </header>
 
@@ -112,22 +118,29 @@ export default async function SalesRepDetailPage({
                                 <h3 className={`font-semibold truncate ${isOC ? 'text-slate-100' : 'text-slate-300'}`}>
                                     {email.subject}
                                 </h3>
-                                <p className="text-xs text-slate-500 mt-1 line-clamp-1 italic">
-                                    "{email.classification_reason || 'Sin motivo registrado'}"
-                                </p>
+                                <ExpandableReason reason={email.classification_reason} />
                             </div>
 
                             {/* Confianza */}
                             {email.confidence && (
                                 <div className="shrink-0">
                                     <span className={`text-xs px-2 py-1 rounded-full ${email.confidence === 'alta' ? 'bg-emerald-500/10 text-emerald-400' :
-                                            email.confidence === 'media' ? 'bg-amber-500/10 text-amber-400' :
-                                                'bg-red-500/10 text-red-400'
+                                        email.confidence === 'media' ? 'bg-amber-500/10 text-amber-400' :
+                                            'bg-red-500/10 text-red-400'
                                         }`}>
                                         {email.confidence}
                                     </span>
                                 </div>
                             )}
+
+                            {/* Feedback Buttons */}
+                            <div className="shrink-0">
+                                <FeedbackButtons
+                                    emailId={email.id}
+                                    currentIsOC={isOC}
+                                    isManualOverride={email.manual_override || false}
+                                />
+                            </div>
                         </div>
                     )
                 })}
@@ -135,6 +148,9 @@ export default async function SalesRepDetailPage({
                 {emails.length === 0 && (
                     <div className="glass p-12 rounded-2xl text-center text-slate-500 italic">
                         No hay correos registrados para {userName} en este día.
+                        <div className="mt-4">
+                            <SyncButton salesRepId={salesRepId} date={selectedDate} />
+                        </div>
                     </div>
                 )}
             </div>

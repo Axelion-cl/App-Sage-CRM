@@ -70,6 +70,14 @@ export async function getDashboardData(targetDate?: string): Promise<AggregatedR
             console.log(`⚠️ [Dashboard] Procesando solo los primeros ${BATCH_SIZE} de ${newEmails.length} nuevos.`)
         }
 
+        // Obtener ejemplos de feedback para few-shot learning
+        const { data: feedbackExamples } = await supabase
+            .from('tracking_emails')
+            .select('subject, is_oc')
+            .eq('manual_override', true)
+            .order('created_at', { ascending: false })
+            .limit(10)
+
         const classifications = []
         for (const email of emailsToProcess) {
             try {
@@ -80,7 +88,8 @@ export async function getDashboardData(targetDate?: string): Promise<AggregatedR
                 const result = await classifyEmail(
                     email.subject || '(sin asunto)',
                     email.body || '',
-                    email.attachments || []
+                    email.attachments || [],
+                    feedbackExamples || []
                 )
 
                 console.log(`🔍 [Classify] id=${email.id} | esOC=${result.esOC} | subject: ${email.subject?.substring(0, 50)}`)

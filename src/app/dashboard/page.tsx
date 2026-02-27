@@ -2,6 +2,7 @@ import { getDashboardData } from '@/lib/dashboard-service'
 import { User, Mail } from 'lucide-react'
 import Link from 'next/link'
 import DateSelector from './DateSelector'
+import GlobalSyncButton from './GlobalSyncButton'
 
 export default async function DashboardPage({
     searchParams,
@@ -23,13 +24,14 @@ export default async function DashboardPage({
                     <h1 className="text-4xl font-bold tracking-tight mb-3">Tracker Órdenes de Compra</h1>
                     <DateSelector />
                 </div>
-                <div className="flex flex-col md:flex-row items-end md:items-center gap-3">
+                <div className="flex flex-col items-end gap-3">
                     <Link
                         href={`/dashboard/logs${date ? `?date=${date}` : ''}`}
                         className="glass px-4 py-2 rounded-full text-sm font-medium border-slate-800 hover:border-slate-600 transition-colors flex items-center gap-2 text-slate-300 hover:text-white"
                     >
                         Ver Log de Correos
                     </Link>
+                    <GlobalSyncButton date={selectedDate} />
                 </div>
             </header>
 
