@@ -31,7 +31,7 @@ export default async function EmailLogsPage({
     const usersData = await fetchFMUsers()
     const users = Array.isArray(usersData) ? usersData : (usersData?.data || [])
 
-    const userMap = new Map(users.map((u: any) => [
+    const userMap = new Map<string | number, string>(users.map((u: any) => [
         u.id,
         `${u.name || ''} ${u.surname || ''}`.trim() || `ID: ${u.id}`
     ]))
@@ -118,9 +118,9 @@ export default async function EmailLogsPage({
                                             {/* Confianza */}
                                             <td className="px-6 py-4">
                                                 <span className={`text-xs px-2 py-1 rounded-full ${email.confidence === 'alta' ? 'bg-emerald-500/10 text-emerald-400' :
-                                                        email.confidence === 'media' ? 'bg-amber-500/10 text-amber-400' :
-                                                            email.confidence === 'baja' ? 'bg-red-500/10 text-red-400' :
-                                                                'bg-slate-800/50 text-slate-500'
+                                                    email.confidence === 'media' ? 'bg-amber-500/10 text-amber-400' :
+                                                        email.confidence === 'baja' ? 'bg-red-500/10 text-red-400' :
+                                                            'bg-slate-800/50 text-slate-500'
                                                     }`}>
                                                     {email.confidence || '—'}
                                                 </span>
