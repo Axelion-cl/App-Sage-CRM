@@ -1,11 +1,10 @@
 import { supabase } from '@/lib/supabase'
 import { fetchFMUsers } from '@/lib/forcemanager'
-import { ChevronLeft, Clock, CheckCircle2, XCircle } from 'lucide-react'
+import { ChevronLeft } from 'lucide-react'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import SyncButton from './SyncButton'
-import FeedbackButtons from './FeedbackButtons'
-import ExpandableReason from './ExpandableReason'
+import EmailListClient from './EmailListClient'
 
 export const dynamic = 'force-dynamic'
 
@@ -79,81 +78,16 @@ export default async function SalesRepDetailPage({
                 </div>
             </header>
 
-            <div className="space-y-3">
-                {emails.map((email, index) => {
-                    const isOC = email.is_oc
-                    const time = email.received_at
-                        ? new Date(email.received_at).toLocaleTimeString('es-CL', { hour: '2-digit', minute: '2-digit' })
-                        : '--:--'
+            <EmailListClient initialEmails={emails} />
 
-                    return (
-                        <div
-                            key={email.id}
-                            className={`glass p-5 rounded-2xl animate-reveal flex flex-col md:flex-row md:items-center gap-4 ${isOC ? 'border-accent/30' : ''}`}
-                            style={{ animationDelay: `${index * 40}ms` }}
-                        >
-                            {/* Hora */}
-                            <div className="flex items-center gap-2 text-slate-500 md:w-20 shrink-0">
-                                <Clock className="w-4 h-4" />
-                                <span className="font-mono text-sm">{time}</span>
-                            </div>
-
-                            {/* Badge */}
-                            <div className="md:w-28 shrink-0">
-                                {isOC ? (
-                                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-accent/10 text-accent border border-accent/20 text-xs font-bold">
-                                        <CheckCircle2 className="w-3.5 h-3.5" />
-                                        <span>OC</span>
-                                    </div>
-                                ) : (
-                                    <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/50 text-slate-500 border border-slate-700/50 text-xs font-medium">
-                                        <XCircle className="w-3.5 h-3.5 opacity-50" />
-                                        <span>No es OC</span>
-                                    </div>
-                                )}
-                            </div>
-
-                            {/* Contenido */}
-                            <div className="flex-1 min-w-0">
-                                <h3 className={`font-semibold truncate ${isOC ? 'text-slate-100' : 'text-slate-300'}`}>
-                                    {email.subject}
-                                </h3>
-                                <ExpandableReason reason={email.classification_reason} />
-                            </div>
-
-                            {/* Confianza */}
-                            {email.confidence && (
-                                <div className="shrink-0">
-                                    <span className={`text-xs px-2 py-1 rounded-full ${email.confidence === 'alta' ? 'bg-emerald-500/10 text-emerald-400' :
-                                        email.confidence === 'media' ? 'bg-amber-500/10 text-amber-400' :
-                                            'bg-red-500/10 text-red-400'
-                                        }`}>
-                                        {email.confidence}
-                                    </span>
-                                </div>
-                            )}
-
-                            {/* Feedback Buttons */}
-                            <div className="shrink-0">
-                                <FeedbackButtons
-                                    emailId={email.id}
-                                    currentIsOC={isOC}
-                                    isManualOverride={email.manual_override || false}
-                                />
-                            </div>
-                        </div>
-                    )
-                })}
-
-                {emails.length === 0 && (
-                    <div className="glass p-12 rounded-2xl text-center text-slate-500 italic">
-                        No hay correos registrados para {userName} en este día.
-                        <div className="mt-4">
-                            <SyncButton salesRepId={salesRepId} date={selectedDate} />
-                        </div>
+            {emails.length === 0 && (
+                <div className="glass p-12 rounded-2xl text-center text-slate-500 italic mt-3">
+                    No hay correos registrados para {userName} en este día.
+                    <div className="mt-4">
+                        <SyncButton salesRepId={salesRepId} date={selectedDate} />
                     </div>
-                )}
-            </div>
+                </div>
+            )}
         </div>
     )
 }

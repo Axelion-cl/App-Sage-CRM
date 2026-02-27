@@ -8,7 +8,7 @@ import { supabase } from '@/lib/supabase'
  */
 export async function PATCH(request: NextRequest) {
     try {
-        const { emailId, isOC } = await request.json()
+        const { emailId, isOC, notes } = await request.json()
 
         if (!emailId || typeof isOC !== 'boolean') {
             return NextResponse.json(
@@ -26,6 +26,7 @@ export async function PATCH(request: NextRequest) {
                 classification_reason: `Marcado manualmente por el usuario como ${isOC ? 'Orden de Compra' : 'No es OC'}`,
                 manual_override: true,
                 confidence: 'alta',
+                feedback_notes: notes || null
             })
             .eq('id', emailId)
             .select()

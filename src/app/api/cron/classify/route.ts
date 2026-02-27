@@ -65,7 +65,7 @@ export async function GET(request: NextRequest) {
         // 4. Obtener feedback examples
         const { data: feedbackExamples } = await supabase
             .from('tracking_emails')
-            .select('subject, is_oc')
+            .select('subject, is_oc, classification_reason, feedback_notes')
             .eq('manual_override', true)
             .order('created_at', { ascending: false })
             .limit(10)
@@ -92,6 +92,7 @@ export async function GET(request: NextRequest) {
                 results.push({
                     fm_email_id: email.id,
                     subject: email.subject || '(sin asunto)',
+                    body: email.body || '',
                     is_oc: result.esOC,
                     classification_reason: result.motivo,
                     confidence: result.confianza || 'media',

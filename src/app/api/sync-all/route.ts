@@ -58,7 +58,7 @@ export async function POST(request: NextRequest) {
         // 4. Obtener ejemplos de feedback para few-shot learning
         const { data: feedbackExamples } = await supabase
             .from('tracking_emails')
-            .select('subject, is_oc')
+            .select('subject, is_oc, classification_reason, feedback_notes')
             .eq('manual_override', true)
             .order('created_at', { ascending: false })
             .limit(10)
@@ -110,6 +110,7 @@ export async function POST(request: NextRequest) {
                     results.push({
                         fm_email_id: email.id,
                         subject: email.subject || '(sin asunto)',
+                        body: email.body || '',
                         is_oc: result.esOC,
                         classification_reason: result.motivo,
                         confidence: result.confianza || 'media',
@@ -140,6 +141,25 @@ export async function POST(request: NextRequest) {
             if (error) {
                 console.error('❌ [Sync-All] Error guardando batch:', error.message)
             }
+        }
+
+        // 7b. Backfill: actualizar body de correos existentes desde ForceManager
+        const classifiedIds = new Set(results.map((r: any) => r.fm_email_id))
+        const emailsToBackfill = allEmails.filter((email: any) => {
+            return email.body && !classifiedIds.has(email.id)
+        })
+
+        let bodyUpdated = 0
+        for (const email of emailsToBackfill) {
+            await supabase
+                .from('tracking_emails')
+                .update({ body: email.body })
+                .eq('fm_email_id', email.id)
+            bodyUpdated++
+        }
+
+        if (bodyUpdated > 0) {
+            console.log(`📝 [Sync-All] Backfill: ${bodyUpdated} correos actualizados con body`)
         }
 
         const ocCount = results.filter(r => r.is_oc).length
