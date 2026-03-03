@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Clock, CheckCircle2, XCircle, Mail } from 'lucide-react'
+import { Clock, CheckCircle2, XCircle, Mail, Building } from 'lucide-react'
 import FeedbackButtons from './FeedbackButtons'
 import ExpandableReason from './ExpandableReason'
 import EmailContentModal from './EmailContentModal'
@@ -16,6 +16,7 @@ interface Email {
     manual_override: boolean
     received_at: string
     feedback_notes: string | null
+    company_name?: string | null
 }
 
 interface EmailListClientProps {
@@ -82,6 +83,12 @@ export default function EmailListClient({ initialEmails }: EmailListClientProps)
                                     <Mail size={14} />
                                 </button>
                             </div>
+                            {email.company_name && (
+                                <div className="flex items-center gap-1.5 mb-2 text-slate-400 text-sm">
+                                    <Building className="w-3.5 h-3.5 opacity-70" />
+                                    <span className="truncate">Empresa: {email.company_name}</span>
+                                </div>
+                            )}
                             <ExpandableReason reason={email.classification_reason} />
                         </div>
 

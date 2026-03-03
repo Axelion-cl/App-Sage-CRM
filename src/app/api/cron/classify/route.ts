@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { fetchFMEmails, fetchFMUsers } from '@/lib/forcemanager'
+import { fetchFMEmails, fetchFMUsers, fetchFMAccountNames } from '@/lib/forcemanager'
 import { classifyEmail } from '@/lib/classifier'
 import { supabase } from '@/lib/supabase'
 
@@ -70,6 +70,10 @@ export async function GET(request: NextRequest) {
             .order('created_at', { ascending: false })
             .limit(10)
 
+        // Obtener nombres de cuenta (empresas)
+        const accountIds = Array.from(new Set(emailsToClassify.map((e: any) => e.accountId).filter(Boolean)))
+        const accountNamesMap = await fetchFMAccountNames(accountIds as number[])
+
         // 5. Clasificar con delay de 3s (safe para rate limits)
         const results: any[] = []
         let errors = 0
@@ -97,6 +101,7 @@ export async function GET(request: NextRequest) {
                     classification_reason: result.motivo,
                     confidence: result.confianza || 'media',
                     sales_rep_id: email.salesRepIdUpdated,
+                    company_name: accountNamesMap.get(email.accountId) || null,
                     received_at: email.date?.time || email.dateCreated,
                     manual_override: false,
                 })

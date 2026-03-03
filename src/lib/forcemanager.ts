@@ -174,3 +174,57 @@ export async function fetchFMUsers() {
 
     return response.json();
 }
+
+/**
+ * Fetch account names by IDs.
+ * Uses a small in-memory cache to avoid redundant API calls for the same accounts.
+ */
+const accountCache = new Map<number, string>();
+
+export async function fetchFMAccountNames(accountIds: number[]): Promise<Map<number, string>> {
+    const token = await getFMToken();
+    const result = new Map<number, string>();
+    const idsToFetch: number[] = [];
+
+    // Check cache first
+    for (const id of accountIds) {
+        if (id === null || id === undefined || id < 0) continue;
+
+        if (accountCache.has(id)) {
+            result.set(id, accountCache.get(id)!);
+        } else {
+            idsToFetch.push(id);
+        }
+    }
+
+    if (idsToFetch.length === 0) return result;
+
+    // Fetch missing accounts
+    // We fetch them in parallel to speed up the process. Note: Could add concurrency limit if list is huge.
+    console.log(`🏢 [FM] Fetching ${idsToFetch.length} new account names.`);
+
+    await Promise.allSettled(
+        idsToFetch.map(async (id) => {
+            try {
+                const response = await fetch(`${API_BASE}/accounts/${id}`, {
+                    headers: {
+                        'X-Session-Key': token!,
+                        'Content-Type': 'application/json',
+                    },
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data && data.name) {
+                        result.set(id, data.name);
+                        accountCache.set(id, data.name); // Store in cache
+                    }
+                }
+            } catch (err) {
+                console.error(`❌ [FM] Failed to fetch account ${id}:`, err);
+            }
+        })
+    );
+
+    return result;
+}
