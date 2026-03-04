@@ -61,14 +61,6 @@ export async function POST(request: NextRequest) {
 
         console.log(`🆕 [Sync] ${emailsToClassify.length} correos por (re)clasificar`)
 
-        // 4. Obtener ejemplos de feedback para few-shot learning
-        const { data: feedbackExamples } = await supabase
-            .from('tracking_emails')
-            .select('subject, is_oc, classification_reason, feedback_notes')
-            .eq('manual_override', true)
-            .order('created_at', { ascending: false })
-            .limit(10)
-
         // Obtener nombres de cuenta (empresas)
         const accountIds = Array.from(new Set(emailsToClassify.map((e: any) => e.accountId).filter(Boolean)))
         const accountNamesMap = await fetchFMAccountNames(accountIds as number[])
@@ -84,8 +76,7 @@ export async function POST(request: NextRequest) {
                 const result = await classifyEmail(
                     email.subject || '(sin asunto)',
                     email.body || '',
-                    email.attachments || [],
-                    feedbackExamples || []
+                    email.attachments || []
                 )
 
                 console.log(`🔍 [Sync] id=${email.id} | esOC=${result.esOC} | conf=${result.confianza} | "${email.subject?.substring(0, 50)}"`)

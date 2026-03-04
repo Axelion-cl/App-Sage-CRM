@@ -62,14 +62,6 @@ export async function GET(request: NextRequest) {
 
         console.log(`🆕 [Cron] ${emailsToClassify.length} correos por (re)clasificar`)
 
-        // 4. Obtener feedback examples
-        const { data: feedbackExamples } = await supabase
-            .from('tracking_emails')
-            .select('subject, is_oc, classification_reason, feedback_notes')
-            .eq('manual_override', true)
-            .order('created_at', { ascending: false })
-            .limit(10)
-
         // Obtener nombres de cuenta (empresas)
         const accountIds = Array.from(new Set(emailsToClassify.map((e: any) => e.accountId).filter(Boolean)))
         const accountNamesMap = await fetchFMAccountNames(accountIds as number[])
@@ -89,8 +81,7 @@ export async function GET(request: NextRequest) {
                 const result = await classifyEmail(
                     email.subject || '(sin asunto)',
                     email.body || '',
-                    email.attachments || [],
-                    feedbackExamples || []
+                    email.attachments || []
                 )
 
                 results.push({

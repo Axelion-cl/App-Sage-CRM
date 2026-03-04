@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { Clock, CheckCircle2, XCircle, Mail, Building } from 'lucide-react'
-import FeedbackButtons from './FeedbackButtons'
 import ExpandableReason from './ExpandableReason'
 import EmailContentModal from './EmailContentModal'
 
@@ -25,7 +24,6 @@ interface EmailListClientProps {
 
 export default function EmailListClient({ initialEmails }: EmailListClientProps) {
     const [selectedEmail, setSelectedEmail] = useState<{ subject: string, body: string } | null>(null)
-    const [activePopupEmailId, setActivePopupEmailId] = useState<string | null>(null)
 
     return (
         <div className="space-y-3">
@@ -45,7 +43,7 @@ export default function EmailListClient({ initialEmails }: EmailListClientProps)
                 return (
                     <div
                         key={email.id}
-                        className={`glass p-5 rounded-2xl animate-reveal flex flex-col md:flex-row md:items-center gap-4 group/row relative ${isOC ? 'border-accent/30' : ''} ${activePopupEmailId === email.id ? 'z-20' : 'z-0'}`}
+                        className={`glass p-5 rounded-2xl animate-reveal flex flex-col md:flex-row md:items-center gap-4 group/row relative ${isOC ? 'border-accent/30' : ''}`}
                         style={{ animationDelay: `${index * 40}ms` }}
                     >
                         {/* Hora */}
@@ -106,16 +104,6 @@ export default function EmailListClient({ initialEmails }: EmailListClientProps)
                                 )}
                             </div>
                         )}
-
-                        {/* Feedback Buttons */}
-                        <div className="shrink-0 relative">
-                            <FeedbackButtons
-                                emailId={email.id}
-                                currentIsOC={isOC}
-                                isManualOverride={email.manual_override || false}
-                                onPopupToggle={(isOpen) => setActivePopupEmailId(isOpen ? email.id : null)}
-                            />
-                        </div>
                     </div>
                 )
             })}

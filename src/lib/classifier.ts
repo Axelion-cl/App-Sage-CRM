@@ -1,7 +1,6 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import Groq from "groq-sdk";
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
-const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 export interface ClassificationResult {
     esOC: boolean;
@@ -10,53 +9,33 @@ export interface ClassificationResult {
     fuentePrincipal: 'asunto' | 'cuerpo' | 'adjunto' | 'combinacion';
 }
 
-interface FeedbackExample {
-    subject: string;
-    is_oc: boolean;
-}
-
 export async function classifyEmail(
     subject: string,
     body: string,
-    attachments: any[],
-    feedbackExamples: FeedbackExample[] = []
+    attachments: any[]
 ): Promise<ClassificationResult> {
     const attachmentNames = attachments.map(a => a.name || a.fileName || 'sin nombre');
     const hasAttachments = attachmentNames.length > 0;
 
-    // Construir sección de few-shot learning si hay ejemplos
-    let feedbackSection = '';
-    if (feedbackExamples.length > 0) {
-        const examples = feedbackExamples.map((ex, i) =>
-            `  ${i + 1}. Asunto: "${ex.subject}" → ${ex.is_oc ? 'ES OC ✅' : 'NO ES OC ❌'}`
-        ).join('\n');
-        feedbackSection = `
-    === EJEMPLOS DE REFERENCIA (correcciones del usuario) ===
-    Los siguientes correos fueron clasificados MANUALMENTE por un experto. 
-    Usa estos ejemplos como referencia para entender qué patrones son OC en esta empresa:
-${examples}
 
-    IMPORTANTE: Aprende de estos patrones. Si un correo nuevo se parece a uno de estos ejemplos, clasifícalo de forma similar.
-    `;
-    }
 
     const prompt = `
     Eres un experto en logística y administración de empresas de distribución.
     Tu tarea es determinar si un correo electrónico contiene o hace referencia a una ORDEN DE COMPRA (OC).
 
-    ANALIZA LAS SIGUIENTES 3 FUENTES DE INFORMACIÓN DE FORMA INTEGRADA:
+    ANALIZA LAS SIGUIENTES 3 FUENTE DE INFORMACIÓN DE FORMA INTEGRADA:
 
     === FUENTE 1: ASUNTO DEL CORREO ===
     "${subject}"
 
     === FUENTE 2: CUERPO DEL CORREO ===
-    "${body.substring(0, 5000)}"
+    "${body.substring(0, 4000)}"
 
     === FUENTE 3: ARCHIVOS ADJUNTOS (${attachmentNames.length} archivo/s) ===
     ${hasAttachments
             ? attachmentNames.map((name, i) => `  ${i + 1}. ${name}`).join('\n')
             : '  (Sin adjuntos)'}
-    ${feedbackSection}
+
     === CRITERIOS DE CLASIFICACIÓN ===
     
     INDICADORES FUERTES de que ES una Orden de Compra:
@@ -88,25 +67,42 @@ ${examples}
   `;
 
     try {
-        const result = await model.generateContent(prompt);
-        const response = await result.response;
-        const text = response.text();
+        const chatCompletion = await groq.chat.completions.create({
+            messages: [
+                {
+                    role: "system",
+                    content: "Eres un clasificador de correos experto que responde estrictamente en formato JSON."
+                },
+                {
+                    role: "user",
+                    content: prompt,
+                },
+            ],
+            model: process.env.GROQ_MODEL || "llama-3.3-70b-versatile", // Modelo configurable via .env
+            temperature: 0.1,
+            max_tokens: 1024,
+            top_p: 1,
+            stream: false,
+            response_format: { type: "json_object" } // Groq soporta modo JSON
+        });
 
-        // Extraer JSON de la respuesta (Gemini a veces envuelve en markdown)
-        const jsonMatch = text.match(/\{[\s\S]*\}/);
-        if (jsonMatch) {
-            const parsed = JSON.parse(jsonMatch[0]);
-            return {
-                esOC: parsed.esOC ?? false,
-                motivo: parsed.motivo || 'Sin motivo',
-                confianza: parsed.confianza || 'media',
-                fuentePrincipal: parsed.fuentePrincipal || 'combinacion',
-            };
-        }
+        const text = chatCompletion.choices[0]?.message?.content || "{}";
+        const parsed = JSON.parse(text);
 
-        throw new Error("No se pudo parsear la respuesta del LLM");
+        return {
+            esOC: parsed.esOC ?? false,
+            motivo: parsed.motivo || 'Sin motivo',
+            confianza: parsed.confianza || 'media',
+            fuentePrincipal: parsed.fuentePrincipal || 'combinacion',
+        };
+
     } catch (error) {
-        console.error("Error clasificando correo:", error);
-        return { esOC: false, motivo: "Error en clasificación", confianza: 'baja', fuentePrincipal: 'combinacion' };
+        console.error("Error clasificando correo con Groq:", error);
+        return {
+            esOC: false,
+            motivo: "Error en clasificación",
+            confianza: 'baja',
+            fuentePrincipal: 'combinacion'
+        };
     }
 }

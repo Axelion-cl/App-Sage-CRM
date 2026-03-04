@@ -55,14 +55,6 @@ export async function POST(request: NextRequest) {
             }
         }
 
-        // 4. Obtener ejemplos de feedback para few-shot learning
-        const { data: feedbackExamples } = await supabase
-            .from('tracking_emails')
-            .select('subject, is_oc, classification_reason, feedback_notes')
-            .eq('manual_override', true)
-            .order('created_at', { ascending: false })
-            .limit(10)
-
         // 5. Filtrar correos que necesitan (re)clasificación
         const emailsToClassify = allEmails.filter((email: any) => {
             const cached = existingMap.get(email.id)
@@ -105,8 +97,7 @@ export async function POST(request: NextRequest) {
                     const result = await classifyEmail(
                         email.subject || '(sin asunto)',
                         email.body || '',
-                        email.attachments || [],
-                        feedbackExamples || []
+                        email.attachments || []
                     )
 
                     console.log(`🔍 [Sync-All] [${i + 1}/${emailsToClassify.length}] esOC=${result.esOC} | "${email.subject?.substring(0, 50)}"`)
