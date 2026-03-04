@@ -6,9 +6,14 @@
 
 ## ¿Qué es esta aplicación?
 
-**App Sage CRM** es una herramienta web interna para el equipo de ventas de **BIENEK**. Su función es muy concreta: **mostrar cuántas Órdenes de Compra (OC) recibió cada vendedor durante el día y a qué hora llegaron**.
+**App Sage CRM** es una herramienta web interna complementaria para el equipo de ventas de **BIENEK**. 
 
-La app revisa automáticamente los correos entrantes del equipo usando inteligencia artificial, identifica cuáles contienen una orden de compra, y los presenta de forma ordenada en un panel (dashboard) por vendedor.
+> [!IMPORTANT]
+> **Esta aplicación NO es un CRM.** Es un procesador de datos que se conecta al CRM existente (ForceManager) para extraer, analizar y presentar información específica de forma más eficiente.
+
+Su función es muy concreta: **mostrar cuántas Órdenes de Compra (OC) recibió cada vendedor durante el día y a qué hora llegaron**.
+
+La app revisa automáticamente los correos entrantes del equipo usando **Inteligencia Artificial (Groq)**, identifica cuáles contienen una orden de compra, y los presenta de forma ordenada en un panel (dashboard) por vendedor.
 
 ---
 
@@ -36,7 +41,7 @@ Correos en ForceManager
   App consulta los correos del día
          │
          ▼
-  IA (Gemini) analiza cada correo
+  IA (Groq / Llama 3) analiza cada correo
   y decide: ¿Es una OC? ¿No es una OC?
          │
          ▼
@@ -60,7 +65,7 @@ Solo se leen los correos **recibidos** (no los enviados) y solo del **día de ho
 
 ### 2. Clasificar con inteligencia artificial
 
-Cada correo es analizado por **Gemini**, un modelo de inteligencia artificial de Google. La IA lee el asunto del correo, el cuerpo del mensaje y el nombre de los archivos adjuntos para decidir si es o no una Orden de Compra.
+Cada correo es analizado por **Groq** (usando el modelo Llama 3), un motor de inteligencia artificial de alta velocidad. La IA lee el asunto del correo, el cuerpo del mensaje y el nombre de los archivos adjuntos para decidir si es o no una Orden de Compra.
 
 La IA busca señales como:
 - Asuntos que digan "OC", "Orden de Compra", "Pedido", "Nota de Pedido"
@@ -219,7 +224,7 @@ Esta pantalla sirve para **auditar** el trabajo de la IA: ver por qué tomó cad
 | Servicio | Para qué se usa |
 |---|---|
 | **ForceManager** | Fuente de los correos. La app lee los emails desde aquí |
-| **Google Gemini** | Motor de IA que clasifica si un correo es OC o no |
+| **Groq (Llama 3)** | Motor de IA que clasifica si un correo es OC o no (reemplaza a Gemini) |
 | **Supabase** | Base de datos y sistema de autenticación (login) |
 
 ---

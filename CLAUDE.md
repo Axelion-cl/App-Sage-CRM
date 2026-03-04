@@ -17,7 +17,7 @@ There are no automated tests in this project.
 ```
 NEXT_PUBLIC_SUPABASE_URL
 NEXT_PUBLIC_SUPABASE_ANON_KEY
-GEMINI_API_KEY
+GROQ_API_KEY                # API Key para clasificación de correos (reemplaza a Gemini)
 FORCEMANAGER_PUBLIC_KEY     # FM username
 FORCEMANAGER_PRIVATE_KEY    # FM password
 CRON_SECRET                 # Bearer token protecting /api/cron/classify
@@ -25,13 +25,13 @@ CRON_SECRET                 # Bearer token protecting /api/cron/classify
 
 ## Architecture
 
-This is a Next.js 16 App Router PWA for BIENEK (a distribution company) that tracks purchase orders (OC = Orden de Compra) by classifying incoming emails using Gemini AI.
+This is NOT a CRM. It is a data-processing application for BIENEK (a distribution company) that processes information coming from their existing CRM (ForceManager). It tracks purchase orders (OC = Orden de Compra) by classifying incoming emails using Groq AI (Llama 3).
 
 ### Data Flow
 
 1. **Fetch** — `forcemanager.ts` pulls today's emails from ForceManager (Sage Sales Management) CRM API v4 and user list.
 2. **Cache check** — `dashboard-service.ts` queries Supabase to find already-classified emails by `fm_email_id`.
-3. **Classify** — New emails are sent to Gemini (`classifier.ts`), max 5 at a time with 2s delay (rate limit: 15 RPM). Each call uses up to 10 recent manual-feedback examples for few-shot learning.
+3. **Classify** — New emails are sent to Groq (`classifier.ts`). Each call uses up to 10 recent manual-feedback examples for few-shot learning.
 4. **Persist** — Results are upserted to `tracking_emails` in Supabase with `onConflict: 'fm_email_id'`.
 5. **Display** — Dashboard shows OC counts aggregated per sales rep.
 
@@ -44,8 +44,8 @@ This is a Next.js 16 App Router PWA for BIENEK (a distribution company) that tra
 - Auth: POST to `/login` → JWT returned → pass via `X-Session-Key` header. Token is cached in module scope.
 
 **Classification logic** (`src/lib/classifier.ts`):
-- Uses `gemini-2.5-flash`. Returns `{ esOC, motivo, confianza, fuentePrincipal }`.
-- Prompt analyzes subject, body (truncated at 5000 chars), and attachment filenames together.
+- Uses `llama-3.3-70b-versatile` via Groq. Returns `{ esOC, motivo, confianza, fuentePrincipal }`.
+- Prompt analyzes subject, body (truncated at 4000 chars), and attachment filenames together.
 - When in doubt, classifier is biased toward `esOC: true` (false positives preferred over missed orders).
 - `manual_override: true` rows are never re-classified; they feed few-shot examples to future requests.
 
@@ -80,7 +80,7 @@ id (UUID, PK)
 fm_email_id (int, unique)   — ForceManager email ID
 subject, body
 is_oc (bool)
-classification_reason (text) — Gemini's explanation
+classification_reason (text) — Groq's explanation
 confidence ('alta'|'media'|'baja')
 sales_rep_id (int)
 received_at (timestamptz)
@@ -95,7 +95,7 @@ Under `src/app/dashboard/[salesRepId]/`:
 - `EmailListClient.tsx` — interactive email list with filtering tabs
 - `FeedbackButtons.tsx` — thumbs up/down to trigger `/api/feedback`
 - `EmailContentModal.tsx` — modal to view raw email body
-- `ExpandableReason.tsx` — expand/collapse Gemini classification reason
+- `ExpandableReason.tsx` — expand/collapse Groq classification reason
 - `SyncButton.tsx` — triggers `/api/sync` for the current rep
 
 Top-level dashboard client components:
