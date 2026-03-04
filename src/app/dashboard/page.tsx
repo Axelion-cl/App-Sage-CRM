@@ -3,6 +3,8 @@ import { User, Mail } from 'lucide-react'
 import Link from 'next/link'
 import DateSelector from './DateSelector'
 import GlobalSyncButton from './GlobalSyncButton'
+import AdminLink from './AdminLink'
+import LogoutButton from './LogoutButton'
 
 export default async function DashboardPage({
     searchParams,
@@ -25,12 +27,16 @@ export default async function DashboardPage({
                     <DateSelector />
                 </div>
                 <div className="flex flex-col items-end gap-3">
-                    <Link
-                        href={`/dashboard/logs${date ? `?date=${date}` : ''}`}
-                        className="glass px-4 py-2 rounded-full text-sm font-medium border-slate-800 hover:border-slate-600 transition-colors flex items-center gap-2 text-slate-300 hover:text-white"
-                    >
-                        Ver Log de Correos
-                    </Link>
+                    <div className="flex items-center gap-2">
+                        <LogoutButton />
+                        <AdminLink />
+                        <Link
+                            href={`/dashboard/logs${date ? `?date=${date}` : ''}`}
+                            className="glass px-4 py-2 rounded-full text-sm font-medium border-slate-800 hover:border-slate-600 transition-colors flex items-center gap-2 text-slate-300 hover:text-white"
+                        >
+                            Ver Log de Correos
+                        </Link>
+                    </div>
                     <GlobalSyncButton date={selectedDate} />
                 </div>
             </header>
@@ -38,8 +44,8 @@ export default async function DashboardPage({
             {/* Indicador de estado */}
             {isToday && (
                 <div className="flex items-center gap-2 text-sm text-slate-400 mb-6 animate-reveal">
-                    <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                    Clasificación en vivo — los correos se analizan al cargar la página
+                    <span className="w-2 h-2 rounded-full bg-slate-400" />
+                    Actualización manual — presiona "Sincronizar todos" para analizar nuevos correos
                 </div>
             )}
             {!isToday && (

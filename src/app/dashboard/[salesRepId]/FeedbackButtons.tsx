@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { CheckCircle2, XCircle, UserCheck } from 'lucide-react'
+import { CheckCircle2, XCircle, UserCheck, RotateCcw } from 'lucide-react'
 
 interface FeedbackButtonsProps {
     emailId: string
@@ -56,12 +56,52 @@ export default function FeedbackButtons({ emailId, currentIsOC, isManualOverride
         }
     }
 
-    // Si ya fue marcado manualmente, mostrar indicador
+    async function handleUndo() {
+        if (!confirm('¿Estás seguro de que deseas deshacer esta clasificación manual? El correo desaparecerá del Panel de Revisión.')) return
+
+        if (loading) return
+        setLoading(true)
+
+        try {
+            const res = await fetch('/api/feedback', {
+                method: 'PATCH',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    emailId,
+                    undo: true,
+                    revertToOC: !currentIsOC
+                }),
+            })
+
+            if (!res.ok) {
+                const data = await res.json()
+                throw new Error(data.error || 'Error al deshacer')
+            }
+
+            router.refresh()
+        } catch (err) {
+            console.error('Error al deshacer feedback:', err)
+        } finally {
+            setLoading(false)
+        }
+    }
+
+    // Si ya fue marcado manualmente, mostrar indicador y botón deshacer
     if (isManualOverride) {
         return (
-            <div className="flex items-center gap-1.5 text-xs text-slate-500">
-                <UserCheck className="w-3.5 h-3.5" />
-                <span>Manual</span>
+            <div className="flex items-center gap-2">
+                <div className="flex items-center gap-1.5 text-xs text-slate-500 bg-slate-800/30 px-2 py-1 rounded-md">
+                    <UserCheck className="w-3.5 h-3.5" />
+                    <span>Manual</span>
+                </div>
+                <button
+                    onClick={handleUndo}
+                    disabled={loading}
+                    title="Deshacer clasificación manual"
+                    className="p-1.5 text-slate-500 hover:text-red-400 hover:bg-red-500/10 rounded-lg transition-colors disabled:opacity-50"
+                >
+                    <RotateCcw className="w-4 h-4" />
+                </button>
             </div>
         )
     }

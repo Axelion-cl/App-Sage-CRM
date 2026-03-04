@@ -47,6 +47,7 @@ export async function classifyEmail(
     - El asunto contiene un número de OC o pedido (ej: "OC 1003974", "Pedido N°84832").
 
     INDICADORES de que NO es una Orden de Compra:
+    - El asunto contiene "Orden de compra atrasada" o similares (Están pidiendo que se les entregue una orden de compra que ya se les envió).
     - Es una solicitud de COTIZACIÓN (están pidiendo precio, no confirmando compra).
     - Es una factura, guía de despacho, nota de crédito, o documento contable YA EMITIDO.
     - Es spam, newsletter, notificación automática del sistema, o correo personal.

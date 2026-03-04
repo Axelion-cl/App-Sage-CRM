@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import SyncButton from './SyncButton'
 import EmailListClient from './EmailListClient'
+import LogoutButton from '../LogoutButton'
 
 export const dynamic = 'force-dynamic'
 
@@ -52,13 +53,16 @@ export default async function SalesRepDetailPage({
 
     return (
         <div className="min-h-screen bg-background text-foreground p-4 md:p-8">
-            <Link
-                href={`/dashboard${date ? `?date=${date}` : ''}`}
-                className="inline-flex items-center gap-2 text-slate-400 hover:text-accent mb-8 transition-colors group"
-            >
-                <ChevronLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
-                <span>Volver al Dashboard</span>
-            </Link>
+            <div className="flex items-center justify-between mb-8">
+                <Link
+                    href={`/dashboard${date ? `?date=${date}` : ''}`}
+                    className="inline-flex items-center gap-2 text-slate-400 hover:text-accent transition-colors group"
+                >
+                    <ChevronLeft className="w-5 h-5 group-hover:-translate-x-1 transition-transform" />
+                    <span>Volver al Dashboard</span>
+                </Link>
+                <LogoutButton />
+            </div>
 
             <header className="mb-10 animate-reveal">
                 <h1 className="text-4xl font-bold tracking-tight mb-2">{userName}</h1>
