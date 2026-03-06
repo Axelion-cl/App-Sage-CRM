@@ -1,21 +1,22 @@
 'use client'
 
 import { useState } from 'react'
-import { Clock, CheckCircle2, XCircle, Mail, Building } from 'lucide-react'
+import { Clock, CheckCircle2, XCircle, Mail, Building, Building2 } from 'lucide-react'
 import FeedbackButtons from './FeedbackButtons'
 import ExpandableReason from './ExpandableReason'
 import EmailContentModal from './EmailContentModal'
 
 interface Email {
     id: string
+    fm_email_id: number
     subject: string
     body: string | null
     is_oc: boolean
     classification_reason: string
-    confidence: string | null
-    manual_override: boolean
     received_at: string
-    feedback_notes: string | null
+    confidence: string
+    manual_override: boolean
+    feedback_notes?: string | null
     company_name?: string | null
 }
 

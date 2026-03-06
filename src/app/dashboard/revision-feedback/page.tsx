@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
-import { CheckCircle2, XCircle, ArrowLeft, Mail, Info, Calendar, RotateCcw } from 'lucide-react'
+import { CheckCircle2, XCircle, ArrowLeft, Mail, Info, Calendar, RotateCcw, Building } from 'lucide-react'
 import Link from 'next/link'
 import { getSalesRepsMap } from './actions'
 import EmailContentModal from '../[salesRepId]/EmailContentModal'
@@ -17,6 +17,7 @@ interface FeedbackEmail {
     classification_reason: string
     feedback_notes: string | null
     received_at: string
+    company_name: string | null
     salesrep: {
         name: string
     } | { name: string }[] | null
@@ -76,6 +77,7 @@ export default function RevisionFeedbackPage() {
                         classification_reason,
                         feedback_notes,
                         received_at,
+                        company_name,
                         sales_rep_id
                     `)
                     .eq('manual_override', true)
@@ -189,6 +191,13 @@ export default function RevisionFeedbackPage() {
                                         <Calendar className="w-3 h-3" />
                                         <span>{date}</span>
                                     </div>
+
+                                    {email.company_name && (
+                                        <div className="flex items-center gap-1.5 mb-2 text-blue-400 text-xs font-medium">
+                                            <Building className="w-3.5 h-3.5 opacity-80" />
+                                            <span className="truncate">Empresa: {email.company_name}</span>
+                                        </div>
+                                    )}
                                     <div className="flex items-center gap-2 mb-3">
                                         <h3 className="font-bold text-white text-lg truncate flex-1 md:flex-none md:whitespace-normal break-words whitespace-normal">"{email.subject}"</h3>
                                         <button

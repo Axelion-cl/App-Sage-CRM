@@ -1,0 +1,36 @@
+{
+  "id": 17381,
+  "emailTo": "cristian.ochoa@bienek.cl",
+  "attachments": [
+    {
+      "id": 26487,
+      "name": "Outlook-kl5tx43r.jpg"
+    },
+    {
+      "id": 26488,
+      "name": "OrdenC_11083130 BIENEK - INSUMOS RUVER.pdf"
+    }
+  ],
+  "extId": "Xa826867d09779f2e17e1d6e6ab70a8986cf39fda",
+  "accountId": 1942,
+  "contactId": 520,
+  "opportunityId": -1,
+  "salesRepId": -1,
+  "emailFrom": "dsepulveda@versluys.cl",
+  "body": "Estimados,\n\nJunto con saludar, envío\nOrden de Compra N°11083130.\n\nSolicito confirmación y fecha de despacho, esto es crucial para poder realizar una buena programación de sus pedidos.\n\nSe les recuerda que se debe incluir el N° de la oc en la factura. Además, comenzaremos a\nmedir la entrega de mercadería y el retraso en los días de entrega.\n\nPasado los 3 días hábiles desde su emisión, la oc caducará, es decir, pedidos fuera de esta fecha no serán recepcionados.\n\nHorario de Recepción:\nLunes a Viernes de 7:00 a 13:00 hrs y Sábado de 7:00 a 12:00 hrs.\n\nSaludos cordiales.",
+  "date": {
+    "time": "2026-03-04T13:02:15Z",
+    "timeStamp": 1772629335,
+    "timeZone": "UTC"
+  },
+  "originEmailId": "<RO2P152MB50108CF281984DEC6AC6733CD77CA@RO2P152MB5010.LAMP152.PROD.OUTLOOK.COM>",
+  "type": 0,
+  "mailFolder": "",
+  "subject": "Pedido 11083130 RUVER INSUMOS (BIENEK)",
+  "salesRepIdDeleted": null,
+  "salesRepIdUpdated": 98,
+  "dateCreated": "2026-03-04T17:07:12.457Z",
+  "dateUpdated": "2026-03-04T17:07:12.457Z",
+  "dateDeleted": null,
+  "deleted": false
+}
